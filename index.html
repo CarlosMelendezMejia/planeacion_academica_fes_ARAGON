@@ -1,504 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
     <title>FES Aragón - Departamento de Planeación Académica</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        /* Header */
-        .header {
-            background: white;
-            padding: 15px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            background: #1e40af;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-text h1 {
-            font-size: 16px;
-            color: #1e40af;
-            font-weight: 600;
-        }
-
-        .logo-text span {
-            font-size: 12px;
-            color: #6b7280;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: #374151;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
-
-        .nav-menu a:hover {
-            color: #1e40af;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 48px;
-            color: #1e3a8a;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            color: #4b5563;
-            font-size: 14px;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        .btn-primary {
-            background: #3b82f6;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 6px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background 0.3s;
-            margin: 0 10px;
-        }
-
-        .btn-primary:hover {
-            background: #2563eb;
-        }
-
-        .btn-secondary {
-            background: white;
-            color: #3b82f6;
-            padding: 12px 30px;
-            border: 1px solid #3b82f6;
-            border-radius: 6px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .btn-secondary:hover {
-            background: #3b82f6;
-            color: white;
-        }
-
-        /* Stats Section */
-        .stats {
-            background: white;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            gap: 80px;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 36px;
-            font-weight: bold;
-            color: #1e3a8a;
-        }
-
-        .stat-label {
-            font-size: 12px;
-            color: #6b7280;
-            margin-top: 5px;
-        }
-
-        /* About Section */
-        .about-section {
-            background: #f9fafb;
-            padding: 60px 20px;
-        }
-
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .about-header h3 {
-            font-size: 32px;
-            color: #1e3a8a;
-            margin-bottom: 10px;
-        }
-
-        .about-header p {
-            color: #6b7280;
-            font-size: 14px;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .about-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .about-card h4 {
-            color: #1e3a8a;
-            font-size: 18px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .icon-circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-
-        .icon-mission {
-            background: #dbeafe;
-            color: #3b82f6;
-        }
-
-        .icon-vision {
-            background: #fef3c7;
-            color: #f59e0b;
-        }
-
-        .about-card p {
-            color: #4b5563;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .tag-container {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-        }
-
-        .tag-blue { background: #dbeafe; color: #1e40af; }
-        .tag-yellow { background: #fef3c7; color: #92400e; }
-        .tag-purple { background: #ede9fe; color: #6b21a8; }
-        .tag-orange { background: #fed7aa; color: #9a3412; }
-
-        /* Programs Section */
-        .programs-section {
-            background: white;
-            padding: 60px 20px;
-        }
-
-        .programs-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .programs-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .programs-header h3 {
-            font-size: 32px;
-            color: #1e3a8a;
-            margin-bottom: 10px;
-        }
-
-        .programs-header p {
-            color: #6b7280;
-            font-size: 14px;
-        }
-
-        .programs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .program-card {
-            background: #f9fafb;
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 4px solid #3b82f6;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .program-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .program-icon {
-            width: 40px;
-            height: 40px;
-            background: #dbeafe;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            color: #3b82f6;
-        }
-
-        .program-card h4 {
-            color: #1e3a8a;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .program-card p {
-            color: #6b7280;
-            font-size: 13px;
-            line-height: 1.5;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: #f3f4f6;
-            padding: 60px 20px;
-        }
-
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .contact-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .contact-header h3 {
-            font-size: 32px;
-            color: #1e3a8a;
-            margin-bottom: 10px;
-        }
-
-        .contact-header p {
-            color: #6b7280;
-            font-size: 14px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            color: #374151;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .contact-info {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-        }
-
-        .info-item {
-            margin-bottom: 25px;
-            display: flex;
-            align-items: start;
-            gap: 15px;
-        }
-
-        .info-icon {
-            width: 40px;
-            height: 40px;
-            background: #dbeafe;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #3b82f6;
-            flex-shrink: 0;
-        }
-
-        .info-content h4 {
-            color: #1e3a8a;
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        .info-content p {
-            color: #6b7280;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        /* Footer */
-        .footer {
-            background: #1e3a8a;
-            color: white;
-            padding: 40px 20px 20px;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-
-        .footer-column h4 {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul li a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
-
-        .footer-column ul li a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #334155;
-            color: #94a3b8;
-            font-size: 12px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .hero h2 {
-                font-size: 32px;
-            }
-
-            .stats {
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .about-grid,
-            .programs-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -510,7 +19,14 @@
                     <span>Facultad de Estudios Superiores</span>
                 </div>
             </div>
-            <nav class="nav-menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="primaryNav">
+                <svg fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+                Menú
+            </button>
+            <nav class="nav-menu" id="primaryNav">
                 <a href="#inicio">Inicio</a>
                 <a href="#departamento">Departamento</a>
                 <a href="#cursos">Cursos</a>
@@ -522,7 +38,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <h2>Departamento de Planeación Académica</h2>
-        <p>El Departamento de Planeación Académica de la Facultad de Estudios Superiores Aragón se dedica al fortalecimiento de las competencias docentes y académicas de nuestra comunidad universitaria a través de cursos, talleres y programas especializados.</p>
+        <p>El Departamento de Planeación Académica de la Facultad de Estudios Superiores Aragón se dedica al
+            fortalecimiento de las competencias docentes y académicas de nuestra comunidad universitaria a través de
+            cursos, talleres y programas especializados.</p>
         <div>
             <button class="btn-primary">Explorar Cursos</button>
             <button class="btn-secondary">Contactar</button>
@@ -562,19 +80,23 @@
                         <span class="icon-circle icon-mission">🎯</span>
                         Misión
                     </h4>
-                    <p>Brindar al personal académico integral de la comunidad académica mediante programas de formación continua que fortalezcan las competencias docentes de investigación y de inclusión.</p>
+                    <p>Brindar al personal académico integral de la comunidad académica mediante programas de formación
+                        continua que fortalezcan las competencias docentes de investigación y de inclusión.</p>
                 </div>
                 <div class="about-card">
                     <h4>
                         <span class="icon-circle icon-vision">👁️</span>
                         Visión
                     </h4>
-                    <p>Ser el referente en formación académica y desarrollo profesional docente dentro del sistema universitario nacional.</p>
+                    <p>Ser el referente en formación académica y desarrollo profesional docente dentro del sistema
+                        universitario nacional.</p>
                 </div>
             </div>
             <div class="about-header" style="margin-top: 50px;">
                 <h3>Nuestro Compromiso</h3>
-                <p>Nos dedicamos a proporcionar formación de calidad que fortalezca las competencias de nuestra comunidad académica, contribuyendo a la excelencia educativa y al desarrollo integral de todos los participantes.</p>
+                <p>Nos dedicamos a proporcionar formación de calidad que fortalezca las competencias de nuestra
+                    comunidad académica, contribuyendo a la excelencia educativa y al desarrollo integral de todos los
+                    participantes.</p>
                 <div class="tag-container" style="justify-content: center;">
                     <span class="tag tag-blue">Calidad</span>
                     <span class="tag tag-yellow">Innovación</span>
@@ -749,5 +271,32 @@
             <p>&copy; 2024 Facultad de Estudios Superiores Aragón - UNAM. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const primaryNav = document.getElementById('primaryNav');
+        if (menuToggle && primaryNav) {
+            menuToggle.addEventListener('click', () => {
+                const open = primaryNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', open);
+            });
+            // Cerrar al hacer click en un enlace
+            primaryNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        primaryNav.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+            // Cerrar al hacer click fuera
+            document.addEventListener('click', e => {
+                if (window.innerWidth <= 768 && !primaryNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                    primaryNav.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
