@@ -518,22 +518,28 @@ body {
 
     .header-container {
         position: relative;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
+    /* Menú móvil a ancho casi completo para evitar que quede pegado a bordes y cortar overflow */
     .nav-menu {
         display: none;
         position: absolute;
         top: 100%;
-        right: 20px;
+        left: 0;
+        right: 0;
         background: #ffffff;
         flex-direction: column;
-        gap: 4px;
-        padding: 14px 18px;
+        gap: 2px;
+        padding: 14px 20px 18px;
         border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        box-shadow: 0 12px 28px -5px rgba(0, 0, 0, .18), 0 4px 10px -2px rgba(0, 0, 0, .08);
+        border-top: 0;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 18px 28px -8px rgba(0, 0, 0, .2), 0 6px 12px -3px rgba(0, 0, 0, .12);
         z-index: 1000;
-        min-width: 200px;
+        min-width: unset;
+        animation: dropdownFade .35s ease;
     }
 
     .nav-menu.open {
@@ -541,12 +547,137 @@ body {
     }
 
     .nav-menu a {
-        padding: 8px 0;
+        padding: 10px 0;
         font-size: 15px;
         color: #1e3a8a;
+        border-bottom: 1px solid #f1f5f9;
     }
 
     .nav-menu a:hover {
         color: #4338ca;
+    }
+
+    .nav-menu a:last-child {
+        border-bottom: 0;
+    }
+
+    /* Tipografía y espacios más compactos y respiración lateral */
+    .hero {
+        padding: 48px 16px 52px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 15px;
+        padding: 0 4px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 28px;
+        padding: 36px 16px;
+    }
+
+    .stat-number {
+        font-size: 30px;
+    }
+
+    .about-section,
+    .programs-section,
+    .contact-section {
+        padding: 50px 16px;
+    }
+
+    .about-header h3,
+    .programs-header h3,
+    .contact-header h3 {
+        font-size: 26px;
+    }
+
+    .about-grid,
+    .programs-grid,
+    .contact-grid {
+        gap: 28px;
+    }
+
+    .about-card,
+    .program-card,
+    .contact-form,
+    .contact-info {
+        padding: 22px;
+    }
+
+    .program-card h4,
+    .about-card h4,
+    .info-content h4 {
+        font-size: 16px;
+    }
+
+    .program-card p,
+    .about-card p,
+    .info-content p {
+        font-size: 13px;
+    }
+
+    /* Footer ajuste padding lateral */
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-container {
+        gap: 28px;
+    }
+
+    /* Asegurar safe-area en dispositivos con notch */
+    body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+}
+
+/* Extra small phones refinements */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 44px 14px 48px;
+    }
+
+    .about-section,
+    .programs-section,
+    .contact-section {
+        padding: 48px 14px;
+    }
+
+    .header-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .nav-menu {
+        padding: 12px 18px 16px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
