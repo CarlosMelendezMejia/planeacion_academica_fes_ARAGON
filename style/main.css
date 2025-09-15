@@ -1,4 +1,4 @@
-﻿/* Theme variables */
+/* Theme variables */
 :root {
     /* Brand & UI */
     --brand-primary: #112a7c;
@@ -421,8 +421,30 @@ body {
 
 /* Modal styles */
 .modal-body img {
-    object-fit: cover;
+    display: block;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.modal-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--cat-color, #000000);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.modal-image img {
+    position: relative;
+    z-index: 0;
 }
 
 .modal-body .subcategories {
@@ -430,6 +452,9 @@ body {
     padding-left: 1.25rem;
     margin-bottom: 0;
 }
+
+
+
 
 
 
