@@ -15,32 +15,50 @@
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-white shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <div class="logo">FES</div>
-                <div class="logo-text ms-2">
-                    <h1>FES Aragón</h1>
-                    <span>Facultad de Estudios Superiores</span>
-                </div>
-            </a>
+            <!-- Logos (desktop) -->
+            <div class="logos-bar d-none d-lg-flex ms-3">
+                <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio UNAM">
+                    <img src="images/logo_unam.png" alt="UNAM" class="nav-logo" loading="lazy">
+                </a>
+                <a href="https://www.aragon.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio FES Aragón">
+                    <img src="images/logo_fes.png" alt="FES Aragón" class="nav-logo" loading="lazy">
+                </a>
+                <a href="#inicio" aria-label="Sección Inicio - Planeación Académica">
+                    <img src="images/logo_planeacion.png" alt="Planeación Académica" class="nav-logo" loading="lazy">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#departamento">Departamento</a></li>
-                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#inicio"><i class="bi bi-house-door me-2"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#quienes-somos"><i class="bi bi-info-circle me-2"></i>Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#departamento"><i class="bi bi-building me-2"></i>Departamento</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#cursos"><i class="bi bi-book me-2"></i>Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#contacto"><i class="bi bi-person-lines-fill me-2"></i>Contacto</a></li>
                 </ul>
+                <!-- Logos (mobile inside collapse) -->
+                <div class="logos-bar d-lg-none mt-3 w-100 justify-content-center gap-3">
+                    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio UNAM">
+                        <img src="images/logo_unam.png" alt="UNAM" class="nav-logo" loading="lazy">
+                    </a>
+                    <a href="https://www.aragon.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio FES Aragón">
+                        <img src="images/logo_fes.png" alt="FES Aragón" class="nav-logo" loading="lazy">
+                    </a>
+                    <a href="#inicio" aria-label="Sección Inicio - Planeación Académica">
+                        <img src="images/logo_planeacion.png" alt="Planeación Académica" class="nav-logo" loading="lazy">
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero py-5 text-center text-white position-relative" style="background-image: url('https://via.placeholder.com/1200x400'); background-size: cover; background-position: center;">
+    <section class="hero py-5 text-center text-white position-relative" style="background-image: url('images/background_planeacion.png'); background-size: cover; background-position: center;">
         <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
         <div class="container position-relative z-1">
             <h2 class="mb-4 display-4 fw-bold">Departamento de Planeación Académica</h2>

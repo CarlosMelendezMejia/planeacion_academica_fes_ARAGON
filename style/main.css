@@ -43,14 +43,22 @@ body {
 
 
 /* Navbar */
-.navbar-nav .custom-nav-link {
-    color: #374151;
-    font-size: 18px;
-    transition: color 0.3s;
+
+.navbar {
+    height: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .custom-nav-link {
+    color: white;
+}
+
+.bg-dark {
+    background-color: #231572 !important;
 }
 
 .navbar-nav .custom-nav-link:hover {
-    color: #1e40af;
+    color: gold;
 }
 
 /* Hero Section */
@@ -142,4 +150,29 @@ body {
 
 .footer a:hover {
     color: white;
+}
+
+/* Logos in Navbar */
+.logos-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* asegurar contraste sobre bg oscuro */
+    opacity: 0.9;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.nav-logo:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 991.98px) {
+    .nav-logo { height: 30px; }
 }
