@@ -207,21 +207,21 @@
                 <h3>Contacto e Información</h3>
                 <p>¿Interesado en nuestros programas? Contáctanos para más información</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-form">
+            <div class="row g-4 contact-grid">
+                <div class="contact-form col-md-6">
                     <h4 style="color: #1e3a8a; margin-bottom: 20px;">Formulario de Interés</h4>
-                    <form>
-                        <div class="form-group">
-                            <label>Nombre completo</label>
-                            <input type="text" placeholder="Ingresa tu nombre completo">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input id="nombre" type="text" class="form-control" placeholder="Ingresa tu nombre completo">
                         </div>
-                        <div class="form-group">
-                            <label>Correo electrónico</label>
-                            <input type="email" placeholder="tu.correo@ejemplo.com">
+                        <div class="col-md-6">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input id="correo" type="email" class="form-control" placeholder="tu.correo@ejemplo.com">
                         </div>
-                        <div class="form-group">
-                            <label>Área de interés</label>
-                            <select>
+                        <div class="col-md-6">
+                            <label for="area" class="form-label">Área de interés</label>
+                            <select id="area" class="form-select">
                                 <option>Seleccionar categoría</option>
                                 <option>Disciplinar</option>
                                 <option>Apoyo didáctico-pedagógico</option>
@@ -232,43 +232,47 @@
                                 <option>Conocimiento y Uso de TIC</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label>Mensaje</label>
-                            <textarea placeholder="Comparte tus intereses específicos o preguntas"></textarea>
+                        <div class="col-md-6">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" placeholder="Comparte tus intereses específicos o preguntas"></textarea>
                         </div>
-                        <button class="btn-primary" style="width: 100%;">Enviar Solicitud</button>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+                        </div>
                     </form>
                 </div>
-                <div class="contact-info">
+                <div class="contact-info col-md-6">
                     <h4 style="color: #1e3a8a; margin-bottom: 20px;">Información de Contacto</h4>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-content">
-                            <h4>Ubicación</h4>
-                            <p>Av. Rancho Seco S/N, Impulsora, 57130 Nezahualcóyotl, Estado de México</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">📞</div>
-                        <div class="info-content">
-                            <h4>Teléfono</h4>
-                            <p>55 5623 1000</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">✉️</div>
-                        <div class="info-content">
-                            <h4>Correo Electrónico</h4>
-                            <p>planeacion.aragon@unam.mx</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">🕐</div>
-                        <div class="info-content">
-                            <h4>Horario de Atención</h4>
-                            <p>Lunes a Viernes de 9:00 a 18:00 hrs</p>
-                        </div>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h5>Ubicación</h5>
+                                <p>Av. Rancho Seco S/N, Impulsora, 57130 Nezahualcóyotl, Estado de México</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p>55 5623 1000</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <h5>Correo Electrónico</h5>
+                                <p>planeacion.aragon@unam.mx</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <div class="info-icon">🕐</div>
+                            <div>
+                                <h5>Horario de Atención</h5>
+                                <p>Lunes a Viernes de 9:00 a 18:00 hrs</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
