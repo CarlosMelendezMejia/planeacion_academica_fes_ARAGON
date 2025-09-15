@@ -1,7 +1,7 @@
 /* Theme variables */
 :root {
     /* Brand & UI */
-    --brand-primary: #1e40af; /* Azul marca (logo, tags) */
+    --brand-primary: #112a7c; /* Azul marca (logo, tags) */
     --brand-muted: #6b7280;   /* Texto secundario */
     --accent: #ffd700;        /* Dorado/acento para hovers */
 
@@ -19,6 +19,18 @@
     --bg-gradient-start: #667eea;
     --bg-gradient-end: #764ba2;
     --contact-bg: #f3f4f6;
+
+    /*Categories*/
+    --disciplinar: #118ab2;
+    --didactico: #06d6a0;
+    --investigacion: #3a0ca3;
+    --docencia: #38b000;
+    --genero: #7b2cbf;
+    --bienestar: #ff5400;
+    --tic: #ef476f;
+    --desarrollo-sostenible: #cca43b;
+    --neurodivergencia: #820263;
+
 }
 * {
     margin: 0;
@@ -147,6 +159,42 @@ body {
 }
 
 /* Programs Section */
+
+.disciplinar {
+    color: var(--disciplinar) !important;
+}
+
+.didactico {
+    color: var(--didactico) !important;
+}
+
+.investigacion {
+    color: var(--investigacion) !important;
+}
+
+.docencia {
+    color: var(--docencia) !important;
+}
+
+.genero {
+    color: var(--genero) !important;
+}
+
+.bienestar {
+    color: var(--bienestar) !important;
+}
+
+.tic {
+    color: var(--tic) !important;
+} 
+
+.desarrollo-sostenible {
+    color: var(--desarrollo-sostenible) !important;
+}
+
+.neurodivergencia {
+    color: var(--neurodivergencia) !important;
+}
 
 /* Contact Section */
 .contact-section {
