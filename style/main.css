@@ -76,76 +76,39 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-    padding: 100px 20px; /* Aumentar el padding para dar más espacio a la imagen */
-    text-align: center;
-    position: relative; /* Necesario para el overlay */
-    background-image: url('https://via.placeholder.com/1200x400'); /* Imagen de fondo de marcador de posición */
-    background-size: cover; /* Cubrir todo el espacio disponible */
-    background-position: center; /* Centrar la imagen */
-    color: white; /* Cambiar el color del texto para que sea legible sobre la imagen */
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar la legibilidad del texto */
-    z-index: 1;
-}
-
-.hero > * {
-    position: relative;
-    z-index: 2;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h2 {
     font-size: 48px;
-    color: white;
-    margin-bottom: 20px;
 }
 
 .hero p {
-    color: white;
     font-size: 14px;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto 30px;
 }
 
 .btn-primary {
-    background: #3b82f6;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
-    margin: 0 10px;
+    background-color: #3b82f6;
+    border-color: #3b82f6;
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background-color: #2563eb;
+    border-color: #2563eb;
 }
 
-.btn-secondary {
-    background: white;
+.btn-outline-primary {
     color: #3b82f6;
-    padding: 12px 30px;
-    border: 1px solid #3b82f6;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s;
+    border-color: #3b82f6;
 }
 
-.btn-secondary:hover {
-    background: #3b82f6;
-    color: white;
+.btn-outline-primary:hover {
+    background-color: #3b82f6;
+    color: #fff;
+    border-color: #3b82f6;
 }
 
 /* Stats Section */
@@ -581,7 +544,7 @@ body {
 
     /* Tipografía y espacios más compactos y respiración lateral */
     .hero {
-        padding: 48px 16px 52px;
+        /* spacing handled by Bootstrap utilities */
     }
 
     .hero h2 {
@@ -591,7 +554,6 @@ body {
 
     .hero p {
         font-size: 15px;
-        padding: 0 4px;
     }
 
     .stats {
@@ -665,7 +627,7 @@ body {
     }
 
     .hero {
-        padding: 44px 14px 48px;
+        /* spacing handled by Bootstrap utilities */
     }
 
     .about-section,
