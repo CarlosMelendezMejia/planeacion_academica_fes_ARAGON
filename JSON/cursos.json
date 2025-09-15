@@ -1,0 +1,49 @@
+{
+  "programa": "PASD 2025",
+  "organiza": {
+    "instituciones": [
+      "DGAPA",
+      "UNAM FES Aragón",
+      "Unidad de Planeación"
+    ]
+  },
+  "curso": {
+    "tipo": "Curso",
+    "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
+    "id": "15164",
+    "categoria": "Igualdad de Género"
+  },
+  "ponentes": [
+    "Arq. Mónica García Juárez",
+    "Mtra. Alejandra Villa Calderón"
+  ],
+  "modalidad": {
+    "tipo": "En línea",
+    "duracion": "20 horas"
+  },
+  "fechas": {
+    "inicio": "2025-08-09",
+    "fin": "2025-08-30",
+    "dias": "Sabatino"
+  },
+  "horario": {
+    "inicio": "09:00",
+    "fin": "14:00",
+    "zona": "Hrs"
+  },
+  "inscripciones": {
+    "url": "http://zafiro.dgapa.unam.mx/registro/inicio",
+    "qr": "incluido en cartel"
+  },
+  "oferta_general": {
+    "url": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+    "qr": "incluido en cartel"
+  },
+  "contacto": {
+    "emails": [
+      "planeacionacademica@aragon.unam.mx",
+      "cursosdgapa@aragon.unam.mx"
+    ],
+    "whatsapp": "5575169840"
+  }
+}
