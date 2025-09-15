@@ -1,4 +1,4 @@
-/* Theme variables */
+﻿/* Theme variables */
 :root {
     /* Brand & UI */
     --brand-primary: #112a7c;
@@ -107,6 +107,19 @@ body {
 .hero {
     background-size: cover;
     background-position: center;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .hero p {
@@ -171,6 +184,7 @@ body {
     transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease;
     border: 1px solid rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    width: 100%;
 }
 
 .category-card:hover {
@@ -326,6 +340,15 @@ body {
 }
 
 @media (max-width: 991.98px) {
+    .hero {
+        min-height: calc(100vh - 74px);
+        padding: 3rem 1.5rem;
+    }
+
+    .hero .container {
+        gap: 1.25rem;
+    }
+
     .logos-bar {
         gap: 14px;
     }
