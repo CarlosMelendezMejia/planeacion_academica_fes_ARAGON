@@ -448,12 +448,17 @@ body {
     background-color: var(--cat-color, #000000);
     opacity: 0.6;
     pointer-events: none;
-    z-index: 1;
+    z-index: 1; /* keep overlay behind the close button */
 }
 
 .modal-image img {
     position: relative;
     z-index: 0;
+}
+
+/* Ensure the modal close button is always clickable above overlays */
+.modal-content .btn-close {
+    z-index: 2;
 }
 
 .modal-body .subcategories {
