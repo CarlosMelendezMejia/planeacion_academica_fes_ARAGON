@@ -316,48 +316,29 @@ body {
 .footer {
     background: #1e3a8a;
     color: white;
-    padding: 40px 20px 20px;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-bottom: 30px;
-}
-
-.footer-column h4 {
+.footer h5 {
     font-size: 16px;
-    margin-bottom: 15px;
 }
 
-.footer-column ul {
-    list-style: none;
+.footer ul {
+    padding: 0;
 }
 
-.footer-column ul li {
+.footer ul li {
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
+.footer a {
     color: #cbd5e1;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
 }
 
-.footer-column ul li a:hover {
+.footer a:hover {
     color: white;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #334155;
-    color: #94a3b8;
-    font-size: 12px;
 }
 
 /* Mobile nav toggle */
@@ -477,15 +458,6 @@ body {
     }
 
     /* Footer ajuste padding lateral */
-    .footer {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .footer-container {
-        gap: 28px;
-    }
-
     /* Asegurar safe-area en dispositivos con notch */
     body {
         padding-left: max(0px, env(safe-area-inset-left));
