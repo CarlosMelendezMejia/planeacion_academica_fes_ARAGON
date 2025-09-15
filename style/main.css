@@ -417,6 +417,15 @@ body {
     body {
         padding-top: 74px;
     }
+
+    .modal-body .row > .col-6 {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .modal-image {
+        height: 40vh;
+    }
 }
 
 /* Modal styles */
