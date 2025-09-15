@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    padding-top: 80px;
 }
 
 /* Branding */
@@ -156,11 +157,11 @@ body {
 .logos-bar {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 18px;
 }
 
 .nav-logo {
-    height: 36px;
+    height: 44px;
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1); /* asegurar contraste sobre bg oscuro */
@@ -174,5 +175,7 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .nav-logo { height: 30px; }
+    .logos-bar { gap: 14px; }
+    .nav-logo { height: 36px; }
+    body { padding-top: 74px; }
 }
