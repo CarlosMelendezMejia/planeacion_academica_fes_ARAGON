@@ -61,19 +61,16 @@ body {
     color: #6b7280;
 }
 
-.nav-menu {
-    display: flex;
-    gap: 30px;
-}
 
-.nav-menu a {
+/* Navbar */
+.navbar-nav .nav-link {
     text-decoration: none;
     color: #374151;
     font-size: 18px;
     transition: color 0.3s;
 }
 
-.nav-menu a:hover {
+.navbar-nav .nav-link:hover {
     color: #1e40af;
 }
 
