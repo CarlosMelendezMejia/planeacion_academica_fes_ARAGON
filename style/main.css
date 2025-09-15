@@ -252,9 +252,7 @@ body {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    /* layout handled by Bootstrap */
 }
 
 .contact-form {
@@ -263,30 +261,15 @@ body {
     border-radius: 12px;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
+.contact-form .form-label {
     color: #374151;
     font-size: 14px;
-    margin-bottom: 8px;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
-    width: 100%;
-    padding: 10px;
+.contact-form .form-control,
+.contact-form .form-select {
     border: 1px solid #d1d5db;
-    border-radius: 6px;
     font-size: 14px;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 100px;
 }
 
 .contact-info {
@@ -295,10 +278,13 @@ body {
     border-radius: 12px;
 }
 
-.info-item {
-    margin-bottom: 25px;
-    display: flex;
-    align-items: start;
+.contact-info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info li {
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -314,13 +300,13 @@ body {
     flex-shrink: 0;
 }
 
-.info-content h4 {
+.contact-info h5 {
     color: #1e3a8a;
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.info-content p {
+.contact-info p {
     color: #6b7280;
     font-size: 14px;
     line-height: 1.5;
@@ -477,20 +463,16 @@ body {
         font-size: 26px;
     }
 
-    .contact-grid {
-        gap: 28px;
-    }
-
     .contact-form,
     .contact-info {
         padding: 22px;
     }
 
-    .info-content h4 {
+    .contact-info h5 {
         font-size: 16px;
     }
 
-    .info-content p {
+    .contact-info p {
         font-size: 13px;
     }
 
