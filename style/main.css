@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
 }
@@ -80,18 +80,39 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-    padding: 60px 20px;
+    padding: 100px 20px; /* Aumentar el padding para dar más espacio a la imagen */
     text-align: center;
+    position: relative; /* Necesario para el overlay */
+    background-image: url('https://via.placeholder.com/1200x400'); /* Imagen de fondo de marcador de posición */
+    background-size: cover; /* Cubrir todo el espacio disponible */
+    background-position: center; /* Centrar la imagen */
+    color: white; /* Cambiar el color del texto para que sea legible sobre la imagen */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejorar la legibilidad del texto */
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h2 {
     font-size: 48px;
-    color: #1e3a8a;
+    color: white;
     margin-bottom: 20px;
 }
 
 .hero p {
-    color: #4b5563;
+    color: white;
     font-size: 14px;
     line-height: 1.6;
     max-width: 600px;
