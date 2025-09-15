@@ -1,14 +1,20 @@
 /* Theme variables */
 :root {
     /* Brand & UI */
-    --brand-primary: #112a7c; /* Azul marca (logo, tags) */
-    --brand-muted: #6b7280;   /* Texto secundario */
-    --accent: #ffd700;        /* Dorado/acento para hovers */
+    --brand-primary: #112a7c;
+    /* Azul marca (logo, tags) */
+    --brand-muted: #6b7280;
+    /* Texto secundario */
+    --accent: #ffd700;
+    /* Dorado/acento para hovers */
 
     /* Navbar & Footer */
-    --navbar-bg: #231572;     /* Fondo navbar oscuro */
-    --footer-bg: #1e3a8a;     /* Fondo footer */
-    --footer-link: #cbd5e1;   /* Enlaces footer */
+    --navbar-bg: #231572;
+    /* Fondo navbar oscuro */
+    --footer-bg: #1e3a8a;
+    /* Fondo footer */
+    --footer-link: #cbd5e1;
+    /* Enlaces footer */
     --footer-link-hover: #ffffff;
 
     /* Buttons */
@@ -32,6 +38,7 @@
     --neurodivergencia: #820263;
 
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -159,6 +166,78 @@ body {
 }
 
 /* Programs Section */
+/* Category cards: base behavior */
+.category-card {
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .12);
+}
+
+/* Text inversion on hover */
+.category-card:hover .text-primary,
+.category-card:hover .text-muted,
+.category-card:hover h4,
+.category-card:hover p,
+.category-card:hover .program-icon,
+.category-card:hover .program-icon i {
+    color: #ffffff !important;
+}
+
+/* Program icon background to transparent on hover for cleaner color fill */
+.category-card .program-icon {
+    transition: color .25s ease, background-color .25s ease;
+}
+
+.category-card:hover .program-icon {
+    background-color: transparent !important;
+}
+
+/* Per-category colors using custom properties */
+.cat-disciplinar {
+    --cat-color: var(--disciplinar);
+}
+
+.cat-didactico {
+    --cat-color: var(--didactico);
+}
+
+.cat-investigacion {
+    --cat-color: var(--investigacion);
+}
+
+.cat-docencia {
+    --cat-color: var(--docencia);
+}
+
+.cat-genero {
+    --cat-color: var(--genero);
+}
+
+.cat-bienestar {
+    --cat-color: var(--bienestar);
+}
+
+.cat-tic {
+    --cat-color: var(--tic);
+}
+
+.cat-desarrollo-sostenible {
+    --cat-color: var(--desarrollo-sostenible);
+}
+
+.cat-neurodivergencia {
+    --cat-color: var(--neurodivergencia);
+}
+
+/* Apply background on hover from category color */
+.category-card:hover {
+    background-color: var(--cat-color) !important;
+    border-color: transparent;
+}
 
 .disciplinar {
     color: var(--disciplinar) !important;
@@ -186,7 +265,7 @@ body {
 
 .tic {
     color: var(--tic) !important;
-} 
+}
 
 .desarrollo-sostenible {
     color: var(--desarrollo-sostenible) !important;
@@ -234,7 +313,8 @@ body {
     height: 44px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* asegurar contraste sobre bg oscuro */
+    filter: brightness(0) invert(1);
+    /* asegurar contraste sobre bg oscuro */
     opacity: 0.9;
     transition: opacity .2s ease, transform .2s ease;
 }
@@ -245,7 +325,15 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .logos-bar { gap: 14px; }
-    .nav-logo { height: 36px; }
-    body { padding-top: 74px; }
+    .logos-bar {
+        gap: 14px;
+    }
+
+    .nav-logo {
+        height: 36px;
+    }
+
+    body {
+        padding-top: 74px;
+    }
 }
