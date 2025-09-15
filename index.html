@@ -177,7 +177,7 @@
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-disciplinar">
+                    <div class="card h-100 text-center bg-white category-card cat-disciplinar" data-bs-toggle="modal" data-bs-target="#modal-disciplinar">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-book disciplinar"></i></div>
                             <h4 class="text-primary disciplinar">Disciplinar</h4>
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-didactico">
+                    <div class="card h-100 text-center bg-white category-card cat-didactico" data-bs-toggle="modal" data-bs-target="#modal-didactico">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-mortarboard didactico"></i></div>
                             <h4 class="text-primary didactico">Apoyo didáctico-pedagógico</h4>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-investigacion">
+                    <div class="card h-100 text-center bg-white category-card cat-investigacion" data-bs-toggle="modal" data-bs-target="#modal-investigacion">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-search investigacion"></i></div>
                             <h4 class="text-primary investigacion">Apoyo a la investigación</h4>
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-docencia">
+                    <div class="card h-100 text-center bg-white category-card cat-docencia" data-bs-toggle="modal" data-bs-target="#modal-docencia">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-people docencia"></i></div>
                             <h4 class="text-primary docencia">Docencia inicial</h4>
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-genero">
+                    <div class="card h-100 text-center bg-white category-card cat-genero" data-bs-toggle="modal" data-bs-target="#modal-genero">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-gender-ambiguous genero"></i></div>
                             <h4 class="text-primary genero">Igualdad de género</h4>
@@ -222,7 +222,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-bienestar">
+                    <div class="card h-100 text-center bg-white category-card cat-bienestar" data-bs-toggle="modal" data-bs-target="#modal-bienestar">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-bandaid bienestar"></i></div>
                             <h4 class="text-primary bienestar">Bienestar de la comunidad</h4>
@@ -231,7 +231,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-tic">
+                    <div class="card h-100 text-center bg-white category-card cat-tic" data-bs-toggle="modal" data-bs-target="#modal-tic">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-laptop tic"></i></div>
                             <h4 class="text-primary tic">Conocimiento y Uso de TIC</h4>
@@ -240,7 +240,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-desarrollo-sostenible">
+                    <div class="card h-100 text-center bg-white category-card cat-desarrollo-sostenible" data-bs-toggle="modal" data-bs-target="#modal-desarrollo-sostenible">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-globe-americas desarrollo-sostenible"></i></div>
                             <h4 class="text-primary desarrollo-sostenible">Desarrollo sostenible</h4>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 text-center bg-white category-card cat-neurodivergencia">
+                    <div class="card h-100 text-center bg-white category-card cat-neurodivergencia" data-bs-toggle="modal" data-bs-target="#modal-neurodivergencia">
                         <div class="card-body">
                             <div class="program-icon text-primary bg-white"><i class="bi bi-person-arms-up neurodivergencia"></i></div>
                             <h4 class="text-primary neurodivergencia">Neurodivergencia e inclusión</h4>
@@ -384,6 +384,215 @@
             <p class="mb-0">&copy; 2025 Facultad de Estudios Superiores Aragón - UNAM. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Category Modals -->
+    <div class="modal fade" id="modal-disciplinar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Disciplinar" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary disciplinar">Disciplinar</h4>
+                            <p class="text-muted">Contenido especializado en áreas disciplinares específicas</p>
+                            <ul class="subcategories">
+                                <li>Matemáticas</li>
+                                <li>Ciencias Sociales</li>
+                                <li>Ingenierías</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-didactico" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Apoyo didáctico-pedagógico" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary didactico">Apoyo didáctico-pedagógico</h4>
+                            <p class="text-muted">Desarrollo de habilidades para la enseñanza y el aprendizaje</p>
+                            <ul class="subcategories">
+                                <li>Estrategias de enseñanza</li>
+                                <li>Evaluación</li>
+                                <li>Diseño curricular</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-investigacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Apoyo a la investigación" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary investigacion">Apoyo a la investigación</h4>
+                            <p class="text-muted">Fortalecimiento de competencias investigativas</p>
+                            <ul class="subcategories">
+                                <li>Metodología</li>
+                                <li>Publicación</li>
+                                <li>Financiamiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-docencia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Docencia inicial" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary docencia">Docencia inicial</h4>
+                            <p class="text-muted">Programas especializados para nuevos docentes</p>
+                            <ul class="subcategories">
+                                <li>Introducción a la docencia</li>
+                                <li>Planeación curricular</li>
+                                <li>Dinámicas de aula</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-genero" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Igualdad de género" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary genero">Igualdad de género</h4>
+                            <p class="text-muted">Formación en perspectiva de género e inclusión</p>
+                            <ul class="subcategories">
+                                <li>Perspectiva de género</li>
+                                <li>Prevención de violencia</li>
+                                <li>Liderazgo femenino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-bienestar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Bienestar de la comunidad" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary bienestar">Bienestar de la comunidad</h4>
+                            <p class="text-muted">Promoción del bienestar integral de la comunidad</p>
+                            <ul class="subcategories">
+                                <li>Salud mental</li>
+                                <li>Actividad física</li>
+                                <li>Integración social</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-tic" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Conocimiento y Uso de TIC" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary tic">Conocimiento y Uso de TIC</h4>
+                            <p class="text-muted">Desarrollo de competencias tecnológicas educativas</p>
+                            <ul class="subcategories">
+                                <li>Herramientas digitales</li>
+                                <li>Aprendizaje en línea</li>
+                                <li>Ciberseguridad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-desarrollo-sostenible" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Desarrollo sostenible" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary desarrollo-sostenible">Desarrollo sostenible</h4>
+                            <p class="text-muted">Desarrollo de competencias para la sostenibilidad</p>
+                            <ul class="subcategories">
+                                <li>Energías renovables</li>
+                                <li>Economía circular</li>
+                                <li>Responsabilidad ambiental</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-neurodivergencia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-6 p-0">
+                            <img src="images/background_planeacion.png" alt="Neurodivergencia e inclusión" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="col-6 p-4">
+                            <h4 class="text-primary neurodivergencia">Neurodivergencia e inclusión</h4>
+                            <p class="text-muted">Formación en neurodiversidad y estrategias inclusivas</p>
+                            <ul class="subcategories">
+                                <li>Autismo</li>
+                                <li>TDAH</li>
+                                <li>Adaptaciones curriculares</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
