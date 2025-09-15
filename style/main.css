@@ -1,3 +1,25 @@
+/* Theme variables */
+:root {
+    /* Brand & UI */
+    --brand-primary: #1e40af; /* Azul marca (logo, tags) */
+    --brand-muted: #6b7280;   /* Texto secundario */
+    --accent: #ffd700;        /* Dorado/acento para hovers */
+
+    /* Navbar & Footer */
+    --navbar-bg: #231572;     /* Fondo navbar oscuro */
+    --footer-bg: #1e3a8a;     /* Fondo footer */
+    --footer-link: #cbd5e1;   /* Enlaces footer */
+    --footer-link-hover: #ffffff;
+
+    /* Buttons */
+    --btn-primary: #3b82f6;
+    --btn-primary-hover: #2563eb;
+
+    /* Backgrounds */
+    --bg-gradient-start: #667eea;
+    --bg-gradient-end: #764ba2;
+    --contact-bg: #f3f4f6;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +28,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
     min-height: 100vh;
     padding-top: 80px;
 }
@@ -16,7 +38,7 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    background: #1e40af;
+    background: var(--brand-primary);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -33,13 +55,13 @@ body {
 
 .logo-text h1 {
     font-size: 16px;
-    color: #1e40af;
+    color: var(--brand-primary);
     font-weight: 600;
 }
 
 .logo-text span {
     font-size: 12px;
-    color: #6b7280;
+    color: var(--brand-muted);
 }
 
 
@@ -55,11 +77,11 @@ body {
 }
 
 .bg-dark {
-    background-color: #231572 !important;
+    background-color: var(--navbar-bg) !important;
 }
 
 .navbar-nav .custom-nav-link:hover {
-    color: gold;
+    color: var(--accent);
 }
 
 /* Hero Section */
@@ -75,24 +97,24 @@ body {
 }
 
 .custom-btn-primary {
-    background-color: #3b82f6;
-    border-color: #3b82f6;
+    background-color: var(--btn-primary);
+    border-color: var(--btn-primary);
 }
 
 .custom-btn-primary:hover {
-    background-color: #2563eb;
-    border-color: #2563eb;
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
 }
 
 .custom-btn-outline-primary {
-    color: #3b82f6;
-    border-color: #3b82f6;
+    color: var(--btn-primary);
+    border-color: var(--btn-primary);
 }
 
 .custom-btn-outline-primary:hover {
-    background-color: #3b82f6;
+    background-color: var(--btn-primary);
     color: #fff;
-    border-color: #3b82f6;
+    border-color: var(--btn-primary);
 }
 
 /* About Section */
@@ -106,7 +128,7 @@ body {
 
 .tag-blue {
     background: #dbeafe;
-    color: #1e40af;
+    color: var(--brand-primary);
 }
 
 .tag-yellow {
@@ -128,13 +150,13 @@ body {
 
 /* Contact Section */
 .contact-section {
-    background: #f3f4f6;
+    background: var(--contact-bg);
 }
 
 
 /* Footer */
 .footer {
-    background: #1e3a8a;
+    background: var(--footer-bg);
     color: white;
 }
 
@@ -143,14 +165,14 @@ body {
 }
 
 .footer a {
-    color: #cbd5e1;
+    color: var(--footer-link);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .footer a:hover {
-    color: white;
+    color: var(--footer-link-hover);
 }
 
 /* Logos in Navbar */
