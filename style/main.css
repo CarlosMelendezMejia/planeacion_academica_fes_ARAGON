@@ -192,7 +192,6 @@ body {
 
 /* Programs Section */
 .programs-section {
-    background: white;
     padding: 60px 20px;
 }
 
@@ -208,56 +207,21 @@ body {
 
 .programs-header h3 {
     font-size: 32px;
-    color: #1e3a8a;
     margin-bottom: 10px;
 }
 
 .programs-header p {
-    color: #6b7280;
     font-size: 14px;
-}
-
-.programs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.program-card {
-    background: #f9fafb;
-    padding: 25px;
-    border-radius: 12px;
-    border-left: 4px solid #3b82f6;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .program-icon {
     width: 40px;
     height: 40px;
-    background: #dbeafe;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    color: #3b82f6;
-}
-
-.program-card h4 {
-    color: #1e3a8a;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.program-card p {
-    color: #6b7280;
-    font-size: 13px;
-    line-height: 1.5;
 }
 
 /* Contact Section */
@@ -513,23 +477,19 @@ body {
         font-size: 26px;
     }
 
-    .programs-grid,
     .contact-grid {
         gap: 28px;
     }
 
-    .program-card,
     .contact-form,
     .contact-info {
         padding: 22px;
     }
 
-    .program-card h4,
     .info-content h4 {
         font-size: 16px;
     }
 
-    .program-card p,
     .info-content p {
         font-size: 13px;
     }
