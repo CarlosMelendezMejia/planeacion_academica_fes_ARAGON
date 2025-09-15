@@ -29,10 +29,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#departamento">Departamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#departamento">Departamento</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -42,13 +42,13 @@
     <section class="hero py-5 text-center text-white position-relative" style="background-image: url('https://via.placeholder.com/1200x400'); background-size: cover; background-position: center;">
         <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
         <div class="container position-relative z-1">
-            <h2 class="mb-4">Departamento de Planeación Académica</h2>
+            <h2 class="mb-4 display-4 fw-bold">Departamento de Planeación Académica</h2>
             <p class="mx-auto mb-4">El Departamento de Planeación Académica de la Facultad de Estudios Superiores Aragón se dedica al
                 fortalecimiento de las competencias docentes y académicas de nuestra comunidad universitaria a través de
                 cursos, talleres y programas especializados.</p>
             <div>
-                <button class="btn btn-primary me-2">Explorar Cursos</button>
-                <button class="btn btn-outline-primary">Contactar</button>
+                <button class="btn custom-btn-primary me-2">Explorar Cursos</button>
+                <button class="btn custom-btn-outline-primary">Contactar</button>
             </div>
         </div>
     </section>
@@ -78,11 +78,11 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section bg-light">
-        <div class="about-container">
-            <div class="about-header">
-                <h3 class="text-primary">Sobre Nuestro Departamento</h3>
-                <p>Comprometidos con la excelencia académica y el desarrollo profesional</p>
+    <section class="about-section bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="text-primary fs-2 fw-bold">Sobre Nuestro Departamento</h3>
+                <p class="text-muted">Comprometidos con la excelencia académica y el desarrollo profesional</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6">
@@ -110,12 +110,12 @@
                     </div>
                 </div>
             </div>
-            <div class="about-header" style="margin-top: 50px;">
-                <h3 class="text-primary">Nuestro Compromiso</h3>
-                <p>Nos dedicamos a proporcionar formación de calidad que fortalezca las competencias de nuestra
+            <div class="text-center mt-5 mb-5">
+                <h3 class="text-primary fs-2 fw-bold">Nuestro Compromiso</h3>
+                <p class="text-muted">Nos dedicamos a proporcionar formación de calidad que fortalezca las competencias de nuestra
                     comunidad académica, contribuyendo a la excelencia educativa y al desarrollo integral de todos los
                     participantes.</p>
-                <div class="tag-container" style="justify-content: center;">
+                <div class="d-flex gap-2 flex-wrap mt-3 justify-content-center">
                     <span class="tag tag-blue">Calidad</span>
                     <span class="tag tag-yellow">Innovación</span>
                     <span class="tag tag-purple">Inclusión</span>
@@ -126,10 +126,10 @@
     </section>
 
     <!-- Programs Section -->
-    <section class="programs-section bg-white">
-        <div class="programs-container">
-            <div class="programs-header">
-                <h3 class="text-primary">Nuestros Programas de Formación</h3>
+    <section class="programs-section bg-white py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="text-primary fs-2 fw-bold">Nuestros Programas de Formación</h3>
                 <p class="text-muted">Explora nuestras categorías de cursos, talleres y programas especializados</p>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -201,26 +201,26 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="contact-header">
-                <h3>Contacto e Información</h3>
-                <p>¿Interesado en nuestros programas? Contáctanos para más información</p>
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="fs-2 fw-bold">Contacto e Información</h3>
+                <p class="text-muted">¿Interesado en nuestros programas? Contáctanos para más información</p>
             </div>
-            <div class="row g-4 contact-grid">
-                <div class="contact-form col-md-6">
-                    <h4 style="color: #1e3a8a; margin-bottom: 20px;">Formulario de Interés</h4>
+            <div class="row g-4">
+                <div class="contact-form col-md-6 bg-white p-4 rounded">
+                    <h4 class="text-primary fw-bold mb-4">Formulario de Interés</h4>
                     <form class="row g-3">
                         <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <label for="nombre" class="form-label fw-bold">Nombre completo</label>
                             <input id="nombre" type="text" class="form-control" placeholder="Ingresa tu nombre completo">
                         </div>
                         <div class="col-md-6">
-                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <label for="correo" class="form-label fw-bold">Correo electrónico</label>
                             <input id="correo" type="email" class="form-control" placeholder="tu.correo@ejemplo.com">
                         </div>
                         <div class="col-md-6">
-                            <label for="area" class="form-label">Área de interés</label>
+                            <label for="area" class="form-label fw-bold">Área de interés</label>
                             <select id="area" class="form-select">
                                 <option>Seleccionar categoría</option>
                                 <option>Disciplinar</option>
@@ -233,43 +233,43 @@
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <label for="mensaje" class="form-label fw-bold">Mensaje</label>
                             <textarea id="mensaje" class="form-control" placeholder="Comparte tus intereses específicos o preguntas"></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+                            <button type="submit" class="btn custom-btn-primary w-100">Enviar Solicitud</button>
                         </div>
                     </form>
                 </div>
-                <div class="contact-info col-md-6">
-                    <h4 style="color: #1e3a8a; margin-bottom: 20px;">Información de Contacto</h4>
+                <div class="contact-info col-md-6 bg-white p-4 rounded">
+                    <h4 class="text-primary fw-bold mb-4">Información de Contacto</h4>
                     <ul class="list-unstyled">
-                        <li class="d-flex mb-3">
+                        <li class="d-flex align-items-start gap-3 mb-3">
                             <div class="info-icon">📍</div>
                             <div>
-                                <h5>Ubicación</h5>
-                                <p>Av. Rancho Seco S/N, Impulsora, 57130 Nezahualcóyotl, Estado de México</p>
+                                <h5 class="text-primary fw-bold mb-1">Ubicación</h5>
+                                <p class="text-muted mb-0">Av. Rancho Seco S/N, Impulsora, 57130 Nezahualcóyotl, Estado de México</p>
                             </div>
                         </li>
-                        <li class="d-flex mb-3">
+                        <li class="d-flex align-items-start gap-3 mb-3">
                             <div class="info-icon">📞</div>
                             <div>
-                                <h5>Teléfono</h5>
-                                <p>55 5623 1000</p>
+                                <h5 class="text-primary fw-bold mb-1">Teléfono</h5>
+                                <p class="text-muted mb-0">55 5623 1000</p>
                             </div>
                         </li>
-                        <li class="d-flex mb-3">
+                        <li class="d-flex align-items-start gap-3 mb-3">
                             <div class="info-icon">✉️</div>
                             <div>
-                                <h5>Correo Electrónico</h5>
-                                <p>planeacion.aragon@unam.mx</p>
+                                <h5 class="text-primary fw-bold mb-1">Correo Electrónico</h5>
+                                <p class="text-muted mb-0">planeacion.aragon@unam.mx</p>
                             </div>
                         </li>
-                        <li class="d-flex mb-3">
+                        <li class="d-flex align-items-start gap-3 mb-3">
                             <div class="info-icon">🕐</div>
                             <div>
-                                <h5>Horario de Atención</h5>
-                                <p>Lunes a Viernes de 9:00 a 18:00 hrs</p>
+                                <h5 class="text-primary fw-bold mb-1">Horario de Atención</h5>
+                                <p class="text-muted mb-0">Lunes a Viernes de 9:00 a 18:00 hrs</p>
                             </div>
                         </li>
                     </ul>
@@ -285,36 +285,36 @@
                 <div class="col-6 col-md-3 text-center text-md-start">
                     <h5 class="mb-3">FES Aragón</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Acerca de la Facultad</a></li>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Misión y Visión</a></li>
-                        <li><a href="#">Directorio</a></li>
+                        <li class="mb-2"><a href="#">Acerca de la Facultad</a></li>
+                        <li class="mb-2"><a href="#">Historia</a></li>
+                        <li class="mb-2"><a href="#">Misión y Visión</a></li>
+                        <li class="mb-2"><a href="#">Directorio</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 text-center text-md-start">
                     <h5 class="mb-3">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Departamento</a></li>
-                        <li><a href="#">Cursos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li class="mb-2"><a href="#">Inicio</a></li>
+                        <li class="mb-2"><a href="#">Departamento</a></li>
+                        <li class="mb-2"><a href="#">Cursos</a></li>
+                        <li class="mb-2"><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 text-center text-md-start">
                     <h5 class="mb-3">Contacto</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">55 5623 1000</a></li>
-                        <li><a href="#">planeacion.aragon@unam.mx</a></li>
-                        <li><a href="#">Av. Rancho Seco S/N, Nezahualcóyotl</a></li>
+                        <li class="mb-2"><a href="#">55 5623 1000</a></li>
+                        <li class="mb-2"><a href="#">planeacion.aragon@unam.mx</a></li>
+                        <li class="mb-2"><a href="#">Av. Rancho Seco S/N, Nezahualcóyotl</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-3 text-center text-md-start">
                     <h5 class="mb-3">Síguenos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
-                        <li><a href="#">Instagram</a></li>
+                        <li class="mb-2"><a href="#">Facebook</a></li>
+                        <li class="mb-2"><a href="#">Twitter</a></li>
+                        <li class="mb-2"><a href="#">YouTube</a></li>
+                        <li class="mb-2"><a href="#">Instagram</a></li>
                     </ul>
                 </div>
             </div>
