@@ -113,7 +113,6 @@ body {
 
 /* About Section */
 .about-section {
-    background: #f9fafb;
     padding: 60px 20px;
 }
 
@@ -129,35 +128,12 @@ body {
 
 .about-header h3 {
     font-size: 32px;
-    color: #1e3a8a;
     margin-bottom: 10px;
 }
 
 .about-header p {
     color: #6b7280;
     font-size: 14px;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.about-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.about-card h4 {
-    color: #1e3a8a;
-    font-size: 18px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .icon-circle {
@@ -178,12 +154,6 @@ body {
 .icon-vision {
     background: #fef3c7;
     color: #f59e0b;
-}
-
-.about-card p {
-    color: #4b5563;
-    font-size: 14px;
-    line-height: 1.6;
 }
 
 .tag-container {
@@ -543,13 +513,11 @@ body {
         font-size: 26px;
     }
 
-    .about-grid,
     .programs-grid,
     .contact-grid {
         gap: 28px;
     }
 
-    .about-card,
     .program-card,
     .contact-form,
     .contact-info {
@@ -557,13 +525,11 @@ body {
     }
 
     .program-card h4,
-    .about-card h4,
     .info-content h4 {
         font-size: 16px;
     }
 
     .program-card p,
-    .about-card p,
     .info-content p {
         font-size: 13px;
     }
