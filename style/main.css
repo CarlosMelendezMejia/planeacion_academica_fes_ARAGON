@@ -480,17 +480,24 @@ body {
 /* Contenedor visible (ventana) */
 #flip {
     display: inline-block;
-    height: 1.2em;
-    /* coincide con line-height de .hero-flip para una línea */
+    height: 2.4em;
+    /* coincide con 2 líneas (2 x 1.2em) para permitir salto de línea */
     overflow: hidden;
     vertical-align: bottom;
+}
+
+/* Limita el ancho de la animación en pantallas grandes para no invadir el logo */
+@media (min-width: 992px) {
+    #flip {
+        max-width: 28ch; /* ajusta si deseas más/menos ancho visible */
+    }
 }
 
 /* Pista que se desplaza verticalmente */
 #flip .flip-track {
     display: block;
-    animation: show-two 6s linear infinite;
-    /* ciclo total: ~6s (3s cada texto aprox.) */
+    animation: show-two 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    /* ciclo total: 8s (ventanas más largas y suavizadas) */
 }
 
 /* Cada ítem (línea) */
@@ -500,42 +507,42 @@ body {
     /* texto blanco sobre tu overlay oscuro */
     padding: 0;
     /* sin fondo ni padding para integrarse al hero */
-    height: 1.2em;
-    /* misma altura que el viewport */
-    margin-bottom: 1.2em;
-    /* “paso” vertical entre ítems */
+    height: 2.4em;          /* muestra hasta 2 líneas */
+    line-height: 1.2;       /* altura de línea coherente */
+    margin-bottom: 0;       /* sin gap adicional; cada item ocupa 2 líneas exactas */
     text-transform: none;
     /* respeta mayúsculas/minúsculas originales */
-    white-space: nowrap;
-    /* evita salto de línea; quítalo si quieres permitirlo */
+    white-space: normal;    /* permite salto de línea */
+    overflow: hidden;       /* recorta si excede 2 líneas */
+    word-break: break-word; /* evita desbordes por palabras largas */
     will-change: transform, opacity;
 }
 
 /* Sincroniza la entrada de cada ítem con el timeline del track */
 #flip .flip-item:nth-child(2) {
-    animation: flip-item-enter-2 6s linear infinite;
+    animation: flip-item-enter-2 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes flip-item-enter-2 {
-    /* 0%→5%: el segundo ítem entra desde arriba y aparece */
+    /* 0%→6%: el segundo ítem entra desde arriba y aparece */
     0%   { opacity: 0; transform: translateY(-25%); }
-    4%   { opacity: 0.7; transform: translateY(-8%); }
-    5%   { opacity: 1; transform: translateY(0); }
+    5%   { opacity: 0.7; transform: translateY(-8%); }
+    6%   { opacity: 1; transform: translateY(0); }
     49%  { opacity: 1; transform: translateY(0); }
     50%  { opacity: 0; transform: translateY(-25%); }
     100% { opacity: 0; transform: translateY(-25%); }
 }
 
 #flip .flip-item:nth-child(1) {
-    animation: flip-item-enter-1 6s linear infinite;
+    animation: flip-item-enter-1 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes flip-item-enter-1 {
-    /* 50%→55%: el primer ítem entra desde arriba y aparece */
+    /* 50%→56%: el primer ítem entra desde arriba y aparece */
     0%   { opacity: 0; transform: translateY(-25%); }
     49%  { opacity: 0; transform: translateY(-25%); }
     50%  { opacity: 0.7; transform: translateY(-8%); }
-    55%  { opacity: 1; transform: translateY(0); }
+    56%  { opacity: 1; transform: translateY(0); }
     99%  { opacity: 1; transform: translateY(0); }
     100% { opacity: 0; transform: translateY(-25%); }
 }
@@ -543,13 +550,13 @@ body {
 /* Versión para dos elementos (paso = 1.2em + 1.2em = 2.4em) */
 @keyframes show-two {
     /* Ventanas de visibilidad y transiciones sincronizadas */
-    0%   { margin-top: -2.4em; }   /* 2º completamente visible (con el gap prev.) */
-    5%   { margin-top: -2.4em; }   /* mantener 2º visible al terminar su entrada */
+    0%   { margin-top: -2.4em; }   /* 2º visible */
+    6%   { margin-top: -2.4em; }   /* mantener 2º visible tras entrada */
     49%  { margin-top: -2.4em; }   /* seguir mostrando 2º */
-    50%  { margin-top: 0; }        /* alinear 1º exactamente en la ventana */
-    55%  { margin-top: 0; }        /* 1º visible tras su entrada */
+    50%  { margin-top: 0; }        /* mostrar 1º */
+    56%  { margin-top: 0; }        /* mantener 1º tras entrada */
     99%  { margin-top: 0; }        /* mantener 1º visible */
-    100% { margin-top: -2.4em; }   /* reset suave al 2º */
+    100% { margin-top: -2.4em; }   /* reset al 2º */
 }
 
 /* Accesibilidad: ocultamos la etiqueta semántica sin afectar layout */
