@@ -588,3 +588,109 @@ body {
         /* reduce un poco en pantallas pequeñas */
     }
 }
+
+/* ===================== Collage (scoped) ===================== */
+/* Prefijo: collage (todas las reglas están bajo .collage para evitar conflictos) */
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 6px; /* gap mínimo para ganar espacio */
+    align-items: stretch;
+}
+
+/* Neutraliza paddings heredados de Bootstrap en .col dentro del collage */
+.collage .col { padding: 0 !important; }
+
+.collage .left,
+.collage .center,
+.collage .right {
+    display: grid;
+    gap: 6px; /* mismo gap mínimo */
+}
+
+/* La columna derecha contiene 4 imágenes más chicas en una grilla 2x2 */
+.collage .right {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Cada tarjeta de imagen */
+.collage .img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    background: #111;
+    isolation: isolate; /* asegura capas correctas del overlay */
+}
+
+.collage .img-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+/* Overlay informativo */
+.collage .overlay {
+    position: absolute;
+    inset: auto 0 0 0; /* pegado abajo */
+    padding: 1rem 1rem 1.1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    color: #fff;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 1;
+}
+
+.collage .overlay h3 {
+    font-size: clamp(1rem, 2.6vw, 1.1rem);
+    margin: 0 0 0.25rem 0;
+}
+
+.collage .overlay p {
+    font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+    opacity: 0.9;
+    margin: 0;
+}
+
+.collage .img-box:hover img {
+    transform: scale(1.06);
+}
+
+.collage .img-box:hover .overlay {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/* Proporciones: 1 y 2 grandes (mismo tamaño, cuadradas), 3-6 chicas (cuadradas e iguales) */
+.collage .left .img-box { aspect-ratio: 1 / 1; }
+.collage .center .img-box { aspect-ratio: 1 / 1; }
+.collage .right .img-box { aspect-ratio: 1 / 1; }
+
+/* Responsivo: tablets */
+@media (max-width: 991.98px) {
+    .collage {
+        grid-template-columns: 1fr;
+    }
+    .collage .left,
+    .collage .center,
+    .collage .right {
+        grid-template-columns: 1fr;
+    }
+    /* En pantallas medianas mantenemos cuadrados para consistencia y simplicidad */
+    .collage .left .img-box { aspect-ratio: 1 / 1; }
+    .collage .center .img-box { aspect-ratio: 1 / 1; }
+    .collage .right { grid-template-columns: 1fr 1fr; }
+}
+
+/* Responsivo: móviles */
+@media (max-width: 575.98px) {
+    .collage {
+        gap: 6px; /* mantener gap mínimo también en móvil */
+    }
+    .collage .img-box { border-radius: 10px; }
+    .collage .overlay { padding: 0.85rem 0.9rem 1rem; }
+    .collage .right { grid-template-columns: 1fr; } /* apila 4 chicas en móvil */
+}
