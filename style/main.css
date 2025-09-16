@@ -141,7 +141,8 @@ body {
 }
 
 .hero-logo-wrapper {
-    width: min(400px, 40vw); /* Aumentado considerablemente */
+    width: min(400px, 40vw);
+    /* Aumentado considerablemente */
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     display: flex;
@@ -418,7 +419,7 @@ body {
         padding-top: 74px;
     }
 
-    .modal-body .row > .col-6 {
+    .modal-body .row>.col-6 {
         width: 100%;
         flex: 0 0 100%;
     }
@@ -448,7 +449,8 @@ body {
     background-color: var(--cat-color, #000000);
     opacity: 0.6;
     pointer-events: none;
-    z-index: 1; /* keep overlay behind the close button */
+    z-index: 1;
+    /* keep overlay behind the close button */
 }
 
 .modal-image img {
@@ -469,13 +471,104 @@ body {
 
 
 
+.hero-flip {
+    /* Usa el tamaño del .display-6; no forzamos font-size aquí */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
 
+/* Contenedor visible (ventana) */
+#flip {
+    display: inline-block;
+    height: 1.2em;
+    /* coincide con line-height de .hero-flip para una línea */
+    overflow: hidden;
+    vertical-align: bottom;
+}
 
+/* Pista que se desplaza verticalmente */
+#flip .flip-track {
+    display: block;
+    animation: show-two 6s linear infinite;
+    /* ciclo total: ~6s (3s cada texto aprox.) */
+}
 
+/* Cada ítem (línea) */
+#flip .flip-item {
+    display: block;
+    color: #fff;
+    /* texto blanco sobre tu overlay oscuro */
+    padding: 0;
+    /* sin fondo ni padding para integrarse al hero */
+    height: 1.2em;
+    /* misma altura que el viewport */
+    margin-bottom: 1.2em;
+    /* “paso” vertical entre ítems */
+    text-transform: none;
+    /* respeta mayúsculas/minúsculas originales */
+    white-space: nowrap;
+    /* evita salto de línea; quítalo si quieres permitirlo */
+    will-change: transform, opacity;
+}
 
+/* Sincroniza la entrada de cada ítem con el timeline del track */
+#flip .flip-item:nth-child(2) {
+    animation: flip-item-enter-2 6s linear infinite;
+}
 
+@keyframes flip-item-enter-2 {
+    /* 0%→5%: el segundo ítem entra desde arriba y aparece */
+    0%   { opacity: 0; transform: translateY(-25%); }
+    4%   { opacity: 0.7; transform: translateY(-8%); }
+    5%   { opacity: 1; transform: translateY(0); }
+    49%  { opacity: 1; transform: translateY(0); }
+    50%  { opacity: 0; transform: translateY(-25%); }
+    100% { opacity: 0; transform: translateY(-25%); }
+}
 
+#flip .flip-item:nth-child(1) {
+    animation: flip-item-enter-1 6s linear infinite;
+}
 
+@keyframes flip-item-enter-1 {
+    /* 50%→55%: el primer ítem entra desde arriba y aparece */
+    0%   { opacity: 0; transform: translateY(-25%); }
+    49%  { opacity: 0; transform: translateY(-25%); }
+    50%  { opacity: 0.7; transform: translateY(-8%); }
+    55%  { opacity: 1; transform: translateY(0); }
+    99%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-25%); }
+}
 
+/* Versión para dos elementos (paso = 1.2em + 1.2em = 2.4em) */
+@keyframes show-two {
+    /* Ventanas de visibilidad y transiciones sincronizadas */
+    0%   { margin-top: -2.4em; }   /* 2º completamente visible (con el gap prev.) */
+    5%   { margin-top: -2.4em; }   /* mantener 2º visible al terminar su entrada */
+    49%  { margin-top: -2.4em; }   /* seguir mostrando 2º */
+    50%  { margin-top: 0; }        /* alinear 1º exactamente en la ventana */
+    55%  { margin-top: 0; }        /* 1º visible tras su entrada */
+    99%  { margin-top: 0; }        /* mantener 1º visible */
+    100% { margin-top: -2.4em; }   /* reset suave al 2º */
+}
 
+/* Accesibilidad: ocultamos la etiqueta semántica sin afectar layout */
+.hero-flip .hero-flip-label {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
+/* Opcional: variante compacta en móviles si el texto es largo */
+@media (max-width: 576px) {
+    .hero-flip {
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
+        /* reduce un poco en pantallas pequeñas */
+    }
+}
