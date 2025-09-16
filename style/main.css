@@ -628,7 +628,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.7s ease;
+    transition: transform 0.7s ease, filter 0.4s ease;
 }
 
 /* Overlay informativo */
@@ -636,31 +636,51 @@ body {
     position: absolute;
     inset: auto 0 0 0; /* pegado abajo */
     padding: 1rem 1rem 1.1rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0));
     color: #fff;
     transform: translateY(40%);
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
     z-index: 1;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .collage .overlay h3 {
     font-size: clamp(1rem, 2.6vw, 1.1rem);
     margin: 0 0 0.25rem 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 .collage .overlay p {
     font-size: clamp(0.85rem, 2.2vw, 0.95rem);
     opacity: 0.9;
     margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
 
 .collage .img-box:hover img {
     transform: scale(1.06);
+    filter: brightness(0.78) saturate(1.05);
 }
 
 .collage .img-box:hover .overlay {
     transform: translateY(0%);
+    opacity: 1;
+}
+
+/* Scrim adicional al hacer hover para asegurar contraste del texto */
+.collage .img-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(51, 9, 203, 0.28);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.collage .img-box:hover::after {
     opacity: 1;
 }
 
