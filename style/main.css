@@ -191,6 +191,15 @@ body {
     border-color: var(--btn-primary);
 }
 
+#title {
+    transition: transform 0.3s ease;
+}
+
+#title:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 /* About Section */
 
 .tag {
