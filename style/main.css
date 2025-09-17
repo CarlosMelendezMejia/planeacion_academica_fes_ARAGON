@@ -923,3 +923,125 @@ body {
     background-color: #e8eaf6;
     color: #3f51b5;
 }
+
+/* Floating Facebook button */
+.facebook-float {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 1040;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Conservamos tamaño/base visual */
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(29, 112, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facebook-float img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.facebook-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 4px rgba(29, 112, 255, 0.8);
+}
+
+.facebook-float:active { transform: scale(1.06); }
+
+@media (max-width: 575.98px) {
+    .facebook-float { right: 14px; bottom: 14px; width: 52px; height: 52px; }
+    .facebook-float img { width: 28px; height: 28px; }
+}
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 90px; /* por encima del botón de Facebook */
+    right: 80px;
+    z-index: 1040;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.2s ease;
+    will-change: transform, box-shadow;
+}
+
+.whatsapp-float img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px 4px rgba(16, 185, 129, 0.8);
+}
+
+.whatsapp-float:hover img { transform: scale(1.06); }
+
+.whatsapp-float:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3), 0 0 15px 4px rgba(16, 185, 129, 0.8);
+}
+
+/* Floating YT button */
+.yt-float {
+    position: fixed;
+    bottom: 160px; /* por encima del WhatsApp */
+    right: 80px;
+    z-index: 1040;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.yt-float img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.yt-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 4px rgba(239, 68, 68, 0.8);
+}
+
+.yt-float:active { transform: scale(1.06); }
+
+@media (max-width: 575.98px) {
+    .yt-float { right: 14px; bottom: 138px; width: 52px; height: 52px; }
+    .yt-float img { width: 28px; height: 28px; }
+}
+
+
+.whatsapp-float:active { transform: scale(1.06); }
+
+@media (max-width: 575.98px) {
+    .whatsapp-float { right: 14px; bottom: 76px; width: 52px; height: 52px; }
+    .whatsapp-float img { width: 28px; height: 28px; }
+}
