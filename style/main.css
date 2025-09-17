@@ -347,6 +347,88 @@ body {
     background: var(--contact-bg);
 }
 
+/* Modern card look for contact form and info */
+.contact-form,
+.contact-info {
+    border: 1px solid rgba(17, 42, 124, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    backdrop-filter: saturate(120%);
+}
+
+.contact-form h4,
+.contact-info h4 {
+    font-weight: 700;
+}
+
+/* Labels */
+.contact-form .form-label {
+    font-size: 0.92rem;
+    color: #334155;
+}
+
+/* Filled inputs/selects */
+.contact-form .form-control,
+.contact-form .form-select {
+    border-radius: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
+    color: #0f172a;
+    padding: 0.65rem 0.85rem;
+    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.contact-form .form-control::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    outline: none;
+    border-color: rgba(17, 42, 124, 0.35);
+    box-shadow: 0 0 0 .2rem rgba(17, 42, 124, 0.15);
+    background-color: #ffffff;
+}
+
+/* Textarea tweaks */
+.contact-form textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Submit button full width already via HTML; add subtle elevation */
+.contact-form .btn {
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 8px 20px rgba(59,130,246,0.2);
+}
+
+.contact-form .btn:active {
+    transform: translateY(1px);
+}
+
+/* Contact info list aesthetics */
+.contact-info .info-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59,130,246,0.12);
+    color: #2563eb;
+    font-size: 1.1rem;
+}
+
+.contact-info h5 {
+    font-size: 1rem;
+}
+
+.contact-info p {
+    font-size: 0.95rem;
+}
+
 
 /* Footer */
 .footer {
