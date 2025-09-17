@@ -87,7 +87,8 @@ body {
 /* Navbar */
 
 .navbar {
-    height: 5rem;
+    min-height: 5rem; /* altura base */
+    height: auto;     /* permite crecer con el collapse */
     padding: 0.5rem 1rem;
 }
 
@@ -416,6 +417,10 @@ body {
         margin-left: 0;
     }
 
+    .hero-content {
+        justify-content: center;
+    }
+
     .logos-bar {
         gap: 14px;
     }
@@ -426,6 +431,63 @@ body {
 
     body {
         padding-top: 74px;
+    }
+
+    /* Asegura que la barra crezca con el menú desplegado */
+    .navbar .navbar-collapse {
+        padding: 0.5rem 0 0.9rem; /* espacio vertical interno al desplegar */
+        border-top: 1px solid rgba(255, 255, 255, 0.08); /* sutil separación bajo el header */
+        background-color: var(--navbar-bg); /* que el fondo acompañe a los items */
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem 0; /* mayor tocabilidad en móvil */
+    }
+
+    /* Mobile navbar toggler: size, colors, and states */
+    .navbar .navbar-toggler {
+        width: 44px;
+        height: 44px;
+        padding: 0; /* centrado exacto del icono */
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.06);
+        transition: background-color .2s ease, border-color .2s ease, transform .15s ease, box-shadow .2s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .navbar .navbar-toggler:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-1px);
+    }
+
+    .navbar .navbar-toggler:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.15rem rgba(255, 215, 0, 0.45); /* foco accesible con acento dorado */
+    }
+
+    /* Icono hamburguesa personalizado (blanco alto contraste) */
+    .navbar.navbar-dark .navbar-toggler-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        opacity: 1;
+    }
+
+    /* Estado abierto: fondo con acento y icono en X */
+    .navbar .navbar-toggler[aria-expanded="true"] {
+        background-color: rgba(255, 215, 0, 0.15); /* usa --accent suavemente */
+        border-color: var(--accent);
+        transform: none;
+    }
+
+    .navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M24 6L6 24'/%3e%3c/svg%3e");
     }
 
     .modal-body .row>.col-6 {
