@@ -213,7 +213,10 @@
                                 <span class="badge text-white category-badge"></span>
                                 <span class="small text-muted course-meta"></span>
                             </div>
-                            <h3 class="h5 mb-2 course-title"></h3>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <h3 class="h5 mb-0 course-title flex-grow-1"></h3>
+                                <span class="estado-badge"></span>
+                            </div>
                             <p class="text-muted flex-grow-1 course-description"></p>
                             <div class="d-flex align-items-center justify-content-between">
                                 <span class="small text-muted course-date"></span>
@@ -380,17 +383,34 @@
             const nivelClave = curso.nivel?.clave || "";
             const nivelNombre = curso.nivel?.nombre || "";
             const fechaInicio = curso.fechas?.inicio || "";
+            const estado = curso.estado || "";
 
             card.dataset.title = titulo;
             card.dataset.category = categoriaClave;
             card.dataset.modalidad = modalidadClave;
             card.dataset.nivel = nivelClave;
             card.dataset.fecha = fechaInicio;
+            card.dataset.estado = estado;
 
             const badge = clone.querySelector(".category-badge");
             if (badge) {
                 badge.textContent = categoriaNombre || "Curso";
                 badge.style.background = categoriaClave ? `var(--${categoriaClave})` : "var(--bs-primary)";
+            }
+
+            // Badge de estado
+            const estadoBadge = clone.querySelector(".estado-badge");
+            if (estadoBadge && estado) {
+                const estadoTextos = {
+                    "inscripciones": "Inscripciones",
+                    "en-curso": "En curso",
+                    "lleno": "Lleno",
+                    "cancelado": "Cancelado"
+                };
+                estadoBadge.textContent = estadoTextos[estado] || estado;
+                estadoBadge.classList.add(`estado-${estado}`);
+            } else if (estadoBadge) {
+                estadoBadge.remove();
             }
 
             const meta = clone.querySelector(".course-meta");

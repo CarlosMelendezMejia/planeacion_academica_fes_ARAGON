@@ -12,6 +12,7 @@
       "id": "15164",
       "tipo": "Curso",
       "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
+      "estado": "en-curso",
       "categoria": {
         "clave": "genero",
         "nombre": "Igualdad de Género"
@@ -56,6 +57,7 @@
       "id": "PASD-2001",
       "tipo": "Curso",
       "titulo": "Herramientas Digitales para Docencia",
+      "estado": "inscripciones",
       "categoria": {
         "clave": "tic",
         "nombre": "Conocimiento y Uso de TIC"
@@ -98,7 +100,8 @@
     {
       "id": "PASD-2002",
       "tipo": "Curso",
-      "titulo": "Estrategias de Evaluación Auténtica",
+      "titulo": "Estrategias de Evaluación Auténtica y Formativa",
+      "estado": "lleno",
       "categoria": {
         "clave": "didactico",
         "nombre": "Apoyo didáctico-pedagógico"
@@ -141,6 +144,7 @@
       "id": "PASD-2003",
       "tipo": "Curso",
       "titulo": "Metodología de la Investigación para Docentes",
+      "estado": "inscripciones",
       "categoria": {
         "clave": "investigacion",
         "nombre": "Apoyo a la investigación"
@@ -183,6 +187,7 @@
       "id": "PASD-2004",
       "tipo": "Curso",
       "titulo": "Didáctica para la Docencia Inicial",
+      "estado": "cancelado",
       "categoria": {
         "clave": "docencia",
         "nombre": "Docencia inicial"
@@ -225,6 +230,7 @@
       "id": "PASD-2005",
       "tipo": "Curso",
       "titulo": "Perspectiva de Género en el Aula",
+      "estado": "inscripciones",
       "categoria": {
         "clave": "genero",
         "nombre": "Igualdad de Género"
@@ -267,6 +273,7 @@
       "id": "PASD-2006",
       "tipo": "Curso",
       "titulo": "Sostenibilidad y Responsabilidad Ambiental",
+      "estado": "en-curso",
       "categoria": {
         "clave": "desarrollo-sostenible",
         "nombre": "Desarrollo sostenible"

@@ -37,6 +37,12 @@
     --desarrollo-sostenible: #cca43b;
     --neurodivergencia: #820263;
 
+    /* Estado de cursos */
+    --estado-inscripciones: #10b981;
+    --estado-en-curso: #3b82f6;
+    --estado-lleno: #f59e0b;
+    --estado-cancelado: #ef4444;
+
 }
 
 * {
@@ -904,4 +910,41 @@ body {
 @media (max-width: 575.98px) {
     .whatsapp-float { right: 14px; bottom: 76px; width: 52px; height: 52px; }
     .whatsapp-float img { width: 28px; height: 28px; }
+}
+
+/* Estado badges para cursos */
+.estado-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.estado-inscripciones {
+    background-color: var(--estado-inscripciones);
+    color: white;
+}
+
+.estado-en-curso {
+    background-color: var(--estado-en-curso);
+    color: white;
+}
+
+.estado-lleno {
+    background-color: var(--estado-lleno);
+    color: white;
+}
+
+.estado-cancelado {
+    background-color: var(--estado-cancelado);
+    color: white;
+    opacity: 0.8;
+}
+
+/* Opacidad para cards de cursos cancelados */
+.course-card[data-estado="cancelado"] {
+    opacity: 0.7;
 }
