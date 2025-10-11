@@ -948,3 +948,135 @@ body {
 .course-card[data-estado="cancelado"] {
     opacity: 0.7;
 }
+/* ========================================
+   Carrusel de Carteles y Avisos
+   ======================================== */
+
+.carousel-section {
+    position: relative;
+}
+
+.carousel-poster {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Ajuste de controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+/* Indicadores personalizados */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target].active {
+    width: 32px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+/* Caption mejorado */
+.carousel-caption {
+    bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto de transición fade */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .carousel-poster {
+        height: 400px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .carousel-poster {
+        height: 300px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel-poster {
+        height: 250px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+
+    .carousel-indicators [data-bs-target].active {
+        width: 24px;
+    }
+}
