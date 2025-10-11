@@ -1,11 +1,7 @@
 {
   "programa": "PASD 2025",
   "organiza": {
-    "instituciones": [
-      "DGAPA",
-      "UNAM FES Aragón",
-      "Unidad de Planeación"
-    ]
+    "instituciones": ["DGAPA", "UNAM FES Aragón", "Unidad de Planeación"]
   },
   "curso": {
     "tipo": "Curso",
@@ -13,10 +9,7 @@
     "id": "15164",
     "categoria": "Igualdad de Género"
   },
-  "ponentes": [
-    "Arq. Mónica García Juárez",
-    "Mtra. Alejandra Villa Calderón"
-  ],
+  "ponentes": ["Arq. Mónica García Juárez", "Mtra. Alejandra Villa Calderón"],
   "modalidad": {
     "tipo": "En línea",
     "duracion": "20 horas"
