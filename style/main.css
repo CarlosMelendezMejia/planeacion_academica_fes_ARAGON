@@ -1080,3 +1080,56 @@ body {
         width: 24px;
     }
 }
+
+/* ========================================
+   FAQ Accordion Styles
+   ======================================== */
+
+.accordion-flush .accordion-item {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-flush .accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-button {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1.25rem 1.5rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-primary-bg-subtle);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-button:hover {
+    background-color: var(--bs-light);
+}
+
+.accordion-button::after {
+    transition: transform 0.3s ease;
+    background-size: 1.25rem;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Icono personalizado en accordion */
+.accordion-button i {
+    font-size: 1.25rem;
+}

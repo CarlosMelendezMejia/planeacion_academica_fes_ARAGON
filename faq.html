@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Preguntas Frecuentes | Planeación Académica</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container-fluid">
+            <!-- Logos (desktop) -->
+            <div class="logos-bar d-none d-lg-flex ms-3">
+                <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio UNAM">
+                    <img src="images/logo_unam.png" alt="UNAM" class="nav-logo" loading="lazy">
+                </a>
+                <a href="https://www.aragon.unam.mx/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Sitio FES Aragón">
+                    <img src="images/logo_fes.png" alt="FES Aragón" class="nav-logo" loading="lazy">
+                </a>
+                <a href="index.html" aria-label="Sección Inicio - Planeación Académica">
+                    <img src="images/logo_planeacion.png" alt="Planeación Académica" class="nav-logo" loading="lazy">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="index.html"><i
+                                class="bi bi-house-door me-2"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="cursos.html"><i
+                                class="bi bi-book me-2"></i>Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="faq.html"><i class="bi bi-question-circle me-2"></i>Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link custom-nav-link" href="index.html#contacto"><i
+                                class="bi bi-person-lines-fill me-2"></i>Contacto</a></li>
+                </ul>
+                <!-- Logos (mobile inside collapse) -->
+                <div class="logos-bar d-lg-none mt-3 w-100 justify-content-center gap-3">
+                    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" aria-label="Sitio UNAM">
+                        <img src="images/logo_unam.png" alt="UNAM" class="nav-logo" loading="lazy">
+                    </a>
+                    <a href="https://www.aragon.unam.mx/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Sitio FES Aragón">
+                        <img src="images/logo_fes.png" alt="FES Aragón" class="nav-logo" loading="lazy">
+                    </a>
+                    <a href="index.html" aria-label="Sección Inicio - Planeación Académica">
+                        <img src="images/logo_planeacion.png" alt="Planeación Académica" class="nav-logo"
+                            loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero py-5 text-white position-relative" style="
+        background-image: url('images/background_planeacion.png');
+        background-size: cover;
+        background-position: center;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.45)"></div>
+        <div class="container position-relative z-1">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9">
+                    <h1 class="fw-bold display-5 mb-3">
+                        Preguntas Frecuentes
+                    </h1>
+                    <p class="hero-description mx-auto">
+                        Encuentra respuestas a las dudas más comunes sobre nuestros cursos, talleres y diplomados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bold mb-3">¿Tienes dudas?</h2>
+                        <p class="text-muted">Consulta nuestras preguntas más frecuentes o contáctanos directamente</p>
+                    </div>
+
+                    <div class="accordion accordion-flush shadow-sm bg-white rounded-3" id="faqAccordion">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-top" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle me-3 text-primary"></i>
+                                    ¿Cómo me inscribo a un curso?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Para inscribirte a un curso, debes seguir los pasos indicados en la convocatoria de
+                                    cada uno. Generalmente, esto incluye llenar un formulario de registro y enviar la
+                                    documentación requerida. Te recomendamos estar atento a nuestras redes sociales y a
+                                    la sección de "Cursos" en esta página para conocer las convocatorias vigentes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi bi-currency-dollar me-3 text-primary"></i>
+                                    ¿Los cursos tienen algún costo?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La mayoría de nuestros cursos son gratuitos para el personal académico de la FES
+                                    Aragón. Sin embargo, algunos programas especializados o diplomados pueden tener una
+                                    cuota de recuperación. Esta información siempre se especifica en la convocatoria de
+                                    cada curso.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="bi bi-award me-3 text-primary"></i>
+                                    ¿Qué tipo de constancia se entrega?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Al concluir satisfactoriamente un curso, se entrega una constancia de participación
+                                    o de acreditación, dependiendo del tipo de programa. Todas nuestras constancias
+                                    tienen valor curricular y son emitidas por la FES Aragón.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA de contacto -->
+                    <div class="text-center mt-5">
+                        <div class="card border-0 shadow-sm bg-primary bg-opacity-10">
+                            <div class="card-body py-4">
+                                <h4 class="fw-bold mb-3">¿No encontraste lo que buscabas?</h4>
+                                <p class="text-muted mb-4">Ponte en contacto con nosotros y con gusto resolveremos tus dudas</p>
+                                <a href="index.html#contacto" class="btn custom-btn-primary">
+                                    <i class="bi bi-envelope me-2"></i>Contactar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">FES Aragón</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Acerca de la Facultad</a></li>
+                        <li class="mb-2"><a href="#">Historia</a></li>
+                        <li class="mb-2"><a href="#">Misión y Visión</a></li>
+                        <li class="mb-2"><a href="#">Directorio</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="cursos.html">Cursos</a></li>
+                        <li class="mb-2"><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li class="mb-2"><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">55 5623 1000</a></li>
+                        <li class="mb-2"><a href="#">planeacion.aragon@unam.mx</a></li>
+                        <li class="mb-2"><a href="#">Av. Rancho Seco S/N, Nezahualcóyotl</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3">Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Facebook</a></li>
+                        <li class="mb-2"><a href="#">Twitter</a></li>
+                        <li class="mb-2"><a href="#">YouTube</a></li>
+                        <li class="mb-2"><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-white text-center py-3">
+            <p class="mb-0">&copy; 2025 Facultad de Estudios Superiores Aragón - UNAM. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
