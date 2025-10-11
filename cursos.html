@@ -109,39 +109,41 @@
                             <label class="form-label fw-bold">Categoría</label>
                             <select id="cat" class="form-select">
                                 <option value="">Todas</option>
-                                <option value="disciplinar">Disciplinar</option>
-                                <option value="didactico">Apoyo didáctico-pedagógico</option>
-                                <option value="investigacion">
-                                    Apoyo a la investigación
-                                </option>
-                                <option value="docencia">Docencia inicial</option>
-                                <option value="genero">Igualdad de género</option>
-                                <option value="bienestar">Bienestar de la comunidad</option>
-                                <option value="tic">Conocimiento y Uso de TIC</option>
-                                <option value="desarrollo-sostenible">
-                                    Desarrollo sostenible
-                                </option>
-                                <option value="neurodivergencia">
-                                    Neurodivergencia e inclusión
-                                </option>
+                                <option value="DISCIPLINAR">Disciplinar</option>
+                                <option value="APOYO DIDÁCTICO-PEDAGÓGICO">Apoyo didáctico-pedagógico</option>
+                                <option value="APOYO A LA INVESTIGACIÓN">Apoyo a la investigación</option>
+                                <option value="DOCENCIA INICIAL">Docencia inicial</option>
+                                <option value="IGUALDAD DE GÉNERO">Igualdad de género</option>
+                                <option value="BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE">Bienestar de la comunidad</option>
+                                <option value="CONOCIMIENTO Y USO DE TIC">Conocimiento y Uso de TIC</option>
+                                <option value="DESARROLLO SOSTENIBLE">Desarrollo sostenible</option>
+                                <option value="NEURODIVERGENCIA E INCLUSIÓN">Neurodivergencia e inclusión</option>
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <label class="form-label fw-bold">Modalidad</label>
-                            <select id="mod" class="form-select">
-                                <option value="">Todas</option>
-                                <option value="presencial">Presencial</option>
-                                <option value="en-linea">En línea</option>
-                                <option value="mixta">Mixta</option>
+                            <label class="form-label fw-bold">Programa</label>
+                            <select id="programa" class="form-select">
+                                <option value="">Todos</option>
+                                <option value="DGAPA">DGAPA</option>
+                                <option value="FES ARAGÓN">FES Aragón</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label fw-bold">Estado</label>
+                            <select id="estado" class="form-select">
+                                <option value="">Todos</option>
+                                <option value="INSCRIPCIONES">Inscripciones</option>
+                                <option value="EN CURSO">En curso</option>
+                                <option value="FINALIZADO">Finalizado</option>
+                                <option value="CANCELADO">Cancelado</option>
                             </select>
                         </div>
                         <div class="col-md-2">
                             <label class="form-label fw-bold">Nivel</label>
                             <select id="nivel" class="form-select">
                                 <option value="">Todos</option>
-                                <option value="basico">Básico</option>
-                                <option value="intermedio">Intermedio</option>
-                                <option value="avanzado">Avanzado</option>
+                                <option value="LICENCIATURA">Licenciatura</option>
+                                <option value="POSGRADO">Posgrado</option>
                             </select>
                         </div>
                         <div class="col-md-1">
@@ -160,34 +162,34 @@
                             Todas
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--disciplinar)"
-                            data-cat="disciplinar">
+                            data-cat="DISCIPLINAR">
                             Disciplinar
                         </button>
-                        <button class="btn btn-sm text-white" style="background: var(--didactico)" data-cat="didactico">
+                        <button class="btn btn-sm text-white" style="background: var(--didactico)" data-cat="APOYO DIDÁCTICO-PEDAGÓGICO">
                             Didáctico-pedagógico
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--investigacion)"
-                            data-cat="investigacion">
+                            data-cat="APOYO A LA INVESTIGACIÓN">
                             Investigación
                         </button>
-                        <button class="btn btn-sm text-white" style="background: var(--docencia)" data-cat="docencia">
+                        <button class="btn btn-sm text-white" style="background: var(--docencia)" data-cat="DOCENCIA INICIAL">
                             Docencia inicial
                         </button>
-                        <button class="btn btn-sm text-white" style="background: var(--genero)" data-cat="genero">
+                        <button class="btn btn-sm text-white" style="background: var(--genero)" data-cat="IGUALDAD DE GÉNERO">
                             Género
                         </button>
-                        <button class="btn btn-sm text-white" style="background: var(--bienestar)" data-cat="bienestar">
+                        <button class="btn btn-sm text-white" style="background: var(--bienestar)" data-cat="BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE">
                             Bienestar
                         </button>
-                        <button class="btn btn-sm text-white" style="background: var(--tic)" data-cat="tic">
+                        <button class="btn btn-sm text-white" style="background: var(--tic)" data-cat="CONOCIMIENTO Y USO DE TIC">
                             TIC
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--desarrollo-sostenible)"
-                            data-cat="desarrollo-sostenible">
+                            data-cat="DESARROLLO SOSTENIBLE">
                             Desarrollo sostenible
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--neurodivergencia)"
-                            data-cat="neurodivergencia">
+                            data-cat="NEURODIVERGENCIA E INCLUSIÓN">
                             Neurodivergencia
                         </button>
                     </div>
@@ -209,22 +211,34 @@
                 <div class="col">
                     <article class="card h-100 border-0 shadow-sm course-card">
                         <div class="card-body d-flex flex-column">
+                            <!-- Fila superior: Programa y Categoría -->
                             <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="badge programa-badge"></span>
                                 <span class="badge text-white category-badge"></span>
-                                <span class="small text-muted course-meta"></span>
                             </div>
+                            <!-- Título y Estado -->
                             <div class="d-flex align-items-center gap-2 mb-2">
                                 <h3 class="h5 mb-0 course-title flex-grow-1"></h3>
                                 <span class="estado-badge"></span>
                             </div>
-                            <p class="text-muted flex-grow-1 course-description"></p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span class="small text-muted course-date"></span>
-                                <div class="d-flex gap-2">
-                                    <a class="btn btn-sm custom-btn-outline-primary btn-details" href="#"
-                                        target="_blank" rel="noopener">Detalles</a>
-                                    <a class="btn btn-sm custom-btn-primary btn-register" href="#"
-                                        target="_blank" rel="noopener">Me interesa</a>
+                            <!-- Metadatos: nivel y horario -->
+                            <div class="small text-muted mb-2 course-meta-info">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <span class="course-nivel"></span>
+                                    <span>•</span>
+                                    <span class="course-tipo"></span>
+                                </div>
+                                <div class="course-horario"></div>
+                            </div>
+                            <!-- Ponentes -->
+                            <div class="mb-2 course-ponentes-container">
+                                <small class="text-muted fw-bold">Imparte:</small>
+                                <small class="text-muted course-ponentes"></small>
+                            </div>
+                            <!-- Fecha -->
+                            <div class="mt-auto pt-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="small text-muted course-date"></span>
                                 </div>
                             </div>
                         </div>
@@ -385,7 +399,8 @@
         // --------- Filtros/orden/búsqueda (cliente) ----------
         const qEl = document.getElementById("q");
         const catEl = document.getElementById("cat");
-        const modEl = document.getElementById("mod");
+        const programaEl = document.getElementById("programa");
+        const estadoEl = document.getElementById("estado");
         const nivelEl = document.getElementById("nivel");
         const ordenEl = document.getElementById("orden");
         const cardsWrap = document.getElementById("cards");
@@ -397,16 +412,24 @@
         let courseItems = [];
         let dataLoaded = false;
 
-        const modalidadIconos = {
-            "en-linea": "bi-wifi",
-            presencial: "bi-geo-alt",
-            mixta: "bi-arrows-angle-contract"
-        };
         const dateFormatter = new Intl.DateTimeFormat("es-MX", {
             day: "2-digit",
             month: "short",
             year: "numeric"
         });
+
+        // Mapeo de categorías a claves CSS
+        const categoriaMap = {
+            "DISCIPLINAR": "disciplinar",
+            "APOYO DIDÁCTICO-PEDAGÓGICO": "didactico",
+            "APOYO A LA INVESTIGACIÓN": "investigacion",
+            "DOCENCIA INICIAL": "docencia",
+            "IGUALDAD DE GÉNERO": "genero",
+            "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE": "bienestar",
+            "CONOCIMIENTO Y USO DE TIC": "tic",
+            "DESARROLLO SOSTENIBLE": "desarrollo-sostenible",
+            "NEURODIVERGENCIA E INCLUSIÓN": "neurodivergencia"
+        };
 
         // Atajos de categoría (chips)
         document.querySelectorAll("[data-cat]").forEach((btn) => {
@@ -416,7 +439,7 @@
             });
         });
 
-        [qEl, catEl, modEl, nivelEl, ordenEl].forEach((el) =>
+        [qEl, catEl, programaEl, estadoEl, nivelEl, ordenEl].forEach((el) =>
             el.addEventListener("input", filtrarYOrdenar)
         );
 
@@ -431,25 +454,6 @@
             return dateFormatter.format(parsed).replace(".", "");
         }
 
-        function configureLink(anchor, url, label) {
-            if (!anchor) {
-                return;
-            }
-            if (!url) {
-                anchor.remove();
-                return;
-            }
-            anchor.href = url;
-            anchor.textContent = label;
-            if (url.startsWith("#")) {
-                anchor.removeAttribute("target");
-                anchor.removeAttribute("rel");
-            } else {
-                anchor.target = "_blank";
-                anchor.rel = "noopener noreferrer";
-            }
-        }
-
         function crearTarjetaCurso(curso) {
             if (!template) {
                 return null;
@@ -461,80 +465,114 @@
                 return null;
             }
 
-            const titulo = curso.titulo || "Curso";
-            const categoriaClave = curso.categoria?.clave || "";
-            const categoriaNombre = curso.categoria?.nombre || "";
-            const modalidadClave = curso.modalidad?.clave || "";
-            const modalidadNombre = curso.modalidad?.nombre || "";
-            const nivelClave = curso.nivel?.clave || "";
-            const nivelNombre = curso.nivel?.nombre || "";
-            const fechaInicio = curso.fechas?.inicio || "";
+            const nombre = curso.nombre || "Curso";
+            const programa = curso.programa || "";
+            const categoria = curso.categoria || "";
+            const categoriaClave = categoriaMap[categoria] || "disciplinar";
+            const nivel = curso.nivel || "";
+            const tipo = curso.tipo || "";
             const estado = curso.estado || "";
+            const fechaInicio = curso.fechas?.inicio || "";
+            const fechaTermino = curso.fechas?.termino || "";
+            const horario = curso.horario || {};
+            const ponentes = Array.isArray(curso.ponentes) ? curso.ponentes.filter(p => p && p !== "-") : [];
 
-            card.dataset.title = titulo;
-            card.dataset.category = categoriaClave;
-            card.dataset.modalidad = modalidadClave;
-            card.dataset.nivel = nivelClave;
-            card.dataset.fecha = fechaInicio;
+            // Guardar datos en dataset para filtros
+            card.dataset.title = nombre.toLowerCase();
+            card.dataset.category = categoria;
+            card.dataset.programa = programa;
+            card.dataset.nivel = nivel;
             card.dataset.estado = estado;
+            card.dataset.fecha = fechaInicio;
 
-            const badge = clone.querySelector(".category-badge");
-            if (badge) {
-                badge.textContent = categoriaNombre || "Curso";
-                badge.style.background = categoriaClave ? `var(--${categoriaClave})` : "var(--bs-primary)";
+            // Badge de programa
+            const programaBadge = clone.querySelector(".programa-badge");
+            if (programaBadge) {
+                programaBadge.textContent = programa;
+                if (programa === "DGAPA") {
+                    programaBadge.classList.add("bg-primary");
+                } else if (programa === "FES ARAGÓN") {
+                    programaBadge.classList.add("bg-success");
+                } else {
+                    programaBadge.classList.add("bg-secondary");
+                }
+            }
+
+            // Badge de categoría
+            const categoryBadge = clone.querySelector(".category-badge");
+            if (categoryBadge) {
+                categoryBadge.textContent = categoria;
+                categoryBadge.style.background = `var(--${categoriaClave})`;
+            }
+
+            // Título
+            const titleEl = clone.querySelector(".course-title");
+            if (titleEl) {
+                titleEl.textContent = nombre;
             }
 
             // Badge de estado
             const estadoBadge = clone.querySelector(".estado-badge");
             if (estadoBadge && estado) {
                 const estadoTextos = {
-                    "inscripciones": "Inscripciones",
-                    "en-curso": "En curso",
-                    "lleno": "Lleno",
-                    "cancelado": "Cancelado"
+                    "INSCRIPCIONES": "Inscripciones",
+                    "EN CURSO": "En curso",
+                    "FINALIZADO": "Finalizado",
+                    "CANCELADO": "Cancelado"
                 };
                 estadoBadge.textContent = estadoTextos[estado] || estado;
-                estadoBadge.classList.add(`estado-${estado}`);
+                const estadoClasses = {
+                    "INSCRIPCIONES": "bg-success",
+                    "EN CURSO": "bg-primary",
+                    "FINALIZADO": "bg-secondary",
+                    "CANCELADO": "bg-danger"
+                };
+                estadoBadge.classList.add(estadoClasses[estado] || "bg-secondary");
             } else if (estadoBadge) {
                 estadoBadge.remove();
             }
 
-            const meta = clone.querySelector(".course-meta");
-            if (meta) {
-                const icono = modalidadIconos[modalidadClave] || "bi-journal-text";
-                const partes = [modalidadNombre, nivelNombre].filter(Boolean);
-                meta.innerHTML = `<i class="bi ${icono} me-1"></i>${partes.join(" · ")}`;
+            // Metadatos: nivel y tipo
+            const nivelEl = clone.querySelector(".course-nivel");
+            if (nivelEl) {
+                nivelEl.innerHTML = `<i class="bi bi-mortarboard me-1"></i>${nivel}`;
             }
 
-            const titleEl = clone.querySelector(".course-title");
-            if (titleEl) {
-                titleEl.textContent = titulo;
-                if (categoriaClave) {
-                    titleEl.classList.add(categoriaClave);
+            const tipoEl = clone.querySelector(".course-tipo");
+            if (tipoEl) {
+                tipoEl.innerHTML = `<i class="bi bi-book me-1"></i>${tipo}`;
+            }
+
+            // Horario
+            const horarioEl = clone.querySelector(".course-horario");
+            if (horarioEl && (horario.dias || horario.horario)) {
+                const horarioTexto = [horario.dias, horario.horario].filter(Boolean).join(", ");
+                horarioEl.innerHTML = `<i class="bi bi-clock me-1"></i>${horarioTexto}`;
+            }
+
+            // Ponentes
+            const ponentesContainer = clone.querySelector(".course-ponentes-container");
+            const ponentesEl = clone.querySelector(".course-ponentes");
+            if (ponentesEl && ponentes.length > 0) {
+                ponentesEl.textContent = ponentes.slice(0, 2).join(", ");
+                if (ponentes.length > 2) {
+                    ponentesEl.textContent += ` +${ponentes.length - 2} más`;
                 }
+            } else if (ponentesContainer) {
+                ponentesContainer.remove();
             }
 
-            const descEl = clone.querySelector(".course-description");
-            if (descEl) {
-                descEl.textContent = curso.descripcion || "Próximamente más detalles.";
-            }
-
+            // Fecha
             const dateEl = clone.querySelector(".course-date");
             if (dateEl) {
-                const fechaFormateada = formatDate(fechaInicio);
-                dateEl.innerHTML = `<i class="bi bi-calendar-event me-1"></i>${fechaFormateada}`;
+                const fechaInicioFormatted = formatDate(fechaInicio);
+                const fechaTerminoFormatted = formatDate(fechaTermino);
+                if (fechaInicio && fechaTermino) {
+                    dateEl.innerHTML = `<i class="bi bi-calendar-event me-1"></i>${fechaInicioFormatted} - ${fechaTerminoFormatted}`;
+                } else {
+                    dateEl.innerHTML = `<i class="bi bi-calendar-event me-1"></i>${fechaInicioFormatted}`;
+                }
             }
-
-            configureLink(
-                clone.querySelector(".btn-details"),
-                curso.enlaces?.detalles,
-                curso.enlaces?.textoDetalles || "Detalles"
-            );
-            configureLink(
-                clone.querySelector(".btn-register"),
-                curso.enlaces?.registro,
-                curso.enlaces?.textoRegistro || "Me interesa"
-            );
 
             return { col, card };
         }
@@ -604,20 +642,25 @@
 
             const term = (qEl.value || "").trim().toLowerCase();
             const cat = catEl.value;
-            const mod = modEl.value;
+            const prog = programaEl.value;
+            const est = estadoEl.value;
             const niv = nivelEl.value;
             const orden = ordenEl.value;
 
             let visibles = courseItems.filter(({ card }) => {
                 const title = (card.dataset.title || "").toLowerCase();
                 const category = card.dataset.category || "";
-                const modalidad = card.dataset.modalidad || "";
+                const programa = card.dataset.programa || "";
+                const estado = card.dataset.estado || "";
                 const nivel = card.dataset.nivel || "";
+                
                 const textMatch = term === "" || title.includes(term);
                 const catMatch = !cat || category === cat;
-                const modMatch = !mod || modalidad === mod;
+                const progMatch = !prog || programa === prog;
+                const estMatch = !est || estado === est;
                 const nivMatch = !niv || nivel === niv;
-                return textMatch && catMatch && modMatch && nivMatch;
+                
+                return textMatch && catMatch && progMatch && estMatch && nivMatch;
             });
 
             visibles.sort((a, b) => {

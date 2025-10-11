@@ -10,9 +10,10 @@ El archivo `cursos.json` contiene la oferta académica del **Departamento de Pla
 
 ```json
 {
-  "programa": "PASD 2025",
-  "organiza": {
-    "instituciones": [...]
+  "metadata": {
+    "total_cursos": 95,
+    "fecha_generacion": "2025-10-11 17:21:19",
+    "fuente": "Panel de Monitoreo Depto. Planeación Académica"
   },
   "cursos": [...]
 }
@@ -20,8 +21,7 @@ El archivo `cursos.json` contiene la oferta académica del **Departamento de Pla
 
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
-| `programa` | `string` | Nombre del programa general (ej: "PASD 2025") |
-| `organiza` | `object` | Información de las instituciones organizadoras |
+| `metadata` | `object` | Metadatos del archivo (total de cursos, fecha de generación, fuente) |
 | `cursos` | `array` | Lista de todos los cursos disponibles |
 
 ---
@@ -36,107 +36,96 @@ Cada objeto dentro del array `cursos` representa un curso individual con la sigu
 
 ```json
 {
-  "id": "15164",
-  "tipo": "Curso",
-  "titulo": "Lenguaje incluyente para una docencia con perspectiva de género"
+  "id": "14321",
+  "programa": "DGAPA",
+  "nombre": "Fundamentos de Automatización de Procesos",
+  "tipo": "CURSO",
+  "año": 2025
 }
 ```
 
 | Campo | Tipo | Descripción | Ejemplo |
 |-------|------|-------------|---------|
-| `id` | `string` | Identificador único del curso | `"15164"`, `"PASD-2001"` |
-| `tipo` | `string` | Tipo de actividad | `"Curso"`, `"Taller"`, `"Diplomado"` |
-| `titulo` | `string` | Nombre completo del curso | `"Herramientas Digitales para Docencia"` |
+| `id` | `string` | Identificador único del curso | `"14321"`, `"14325"` |
+| `programa` | `string` | Programa al que pertenece | `"DGAPA"`, `"FES ARAGÓN"` |
+| `nombre` | `string` | Nombre completo del curso | `"Fundamentos de Automatización de Procesos"` |
+| `tipo` | `string` | Tipo de actividad | `"CURSO"`, `"TALLER"`, `"DIPLOMADO"` |
+| `año` | `number` | Año de impartición | `2025` |
 
-#### 2. **Estado del Curso** 🎯
+#### 2. **Programa** 🎯
 
 ```json
 {
-  "estado": "inscripciones"
+  "programa": "DGAPA"
+}
+```
+
+| Valor | Badge Color | Descripción |
+|-------|-------------|-------------|
+| `"DGAPA"` | 🔵 Azul | Dirección General de Asuntos del Personal Académico |
+| `"FES ARAGÓN"` | 🟢 Verde | Facultad de Estudios Superiores Aragón |
+
+#### 3. **Estado del Curso** 🎯
+
+```json
+{
+  "estado": "FINALIZADO"
 }
 ```
 
 | Campo | Tipo | Valores Permitidos | Color de Badge | Descripción |
 |-------|------|--------------------|----------------|-------------|
-| `estado` | `string` | `"inscripciones"` | 🟢 Verde (`#10b981`) | Curso con inscripciones abiertas |
-| | | `"en-curso"` | 🔵 Azul (`#3b82f6`) | Curso actualmente en desarrollo |
-| | | `"lleno"` | 🟠 Naranja (`#f59e0b`) | Curso con cupo completo |
-| | | `"cancelado"` | 🔴 Rojo (`#ef4444`) | Curso cancelado o suspendido |
+| `estado` | `string` | `"INSCRIPCIONES"` | 🟢 Verde | Curso con inscripciones abiertas |
+| | | `"EN CURSO"` | 🔵 Azul | Curso actualmente en desarrollo |
+| | | `"FINALIZADO"` | ⚫ Gris | Curso ya finalizado |
+| | | `"CANCELADO"` | 🔴 Rojo | Curso cancelado o suspendido |
 
-> **Nota:** Los cursos con estado `"cancelado"` se muestran con opacidad reducida (70%) en los cards.
+> **Nota:** Los cursos con estado `"CANCELADO"` se muestran con opacidad reducida (75%) en los cards.
 
-#### 3. **Categoría**
+#### 4. **Categoría**
 
 ```json
 {
-  "categoria": {
-    "clave": "genero",
-    "nombre": "Igualdad de Género"
-  }
+  "categoria": "DISCIPLINAR"
 }
 ```
 
 **Categorías Disponibles:**
 
-| Clave | Nombre | Color (CSS) |
-|-------|--------|-------------|
-| `"disciplinar"` | Disciplinar | `#118ab2` |
-| `"didactico"` | Apoyo didáctico-pedagógico | `#06d6a0` |
-| `"investigacion"` | Apoyo a la investigación | `#3a0ca3` |
-| `"docencia"` | Docencia inicial | `#38b000` |
-| `"genero"` | Igualdad de Género | `#7b2cbf` |
-| `"bienestar"` | Bienestar de la comunidad | `#ff5400` |
-| `"tic"` | Conocimiento y Uso de TIC | `#ef476f` |
-| `"desarrollo-sostenible"` | Desarrollo sostenible | `#cca43b` |
-| `"neurodivergencia"` | Neurodivergencia e inclusión | `#820263` |
-
-#### 4. **Modalidad**
-
-```json
-{
-  "modalidad": {
-    "clave": "en-linea",
-    "nombre": "En línea",
-    "duracion": "20 horas"
-  }
-}
-```
-
-**Modalidades Disponibles:**
-
-| Clave | Nombre | Icono Bootstrap | Descripción |
-|-------|--------|-----------------|-------------|
-| `"en-linea"` | En línea | `bi-wifi` | Curso 100% virtual |
-| `"presencial"` | Presencial | `bi-geo-alt` | Curso en instalaciones físicas |
-| `"mixta"` | Mixta | `bi-arrows-angle-contract` | Combinación de sesiones presenciales y virtuales |
+| Valor | Nombre Completo | Color (CSS) |
+|-------|-----------------|-------------|
+| `"DISCIPLINAR"` | Disciplinar | `#118ab2` |
+| `"APOYO DIDÁCTICO-PEDAGÓGICO"` | Apoyo didáctico-pedagógico | `#06d6a0` |
+| `"APOYO A LA INVESTIGACIÓN"` | Apoyo a la investigación | `#3a0ca3` |
+| `"DOCENCIA INICIAL"` | Docencia inicial | `#38b000` |
+| `"IGUALDAD DE GÉNERO"` | Igualdad de Género | `#7b2cbf` |
+| `"BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE"` | Bienestar de la comunidad | `#ff5400` |
+| `"CONOCIMIENTO Y USO DE TIC"` | Conocimiento y Uso de TIC | `#ef476f` |
+| `"DESARROLLO SOSTENIBLE"` | Desarrollo sostenible | `#cca43b` |
+| `"NEURODIVERGENCIA E INCLUSIÓN"` | Neurodivergencia e inclusión | `#820263` |
 
 #### 5. **Nivel**
 
 ```json
 {
-  "nivel": {
-    "clave": "intermedio",
-    "nombre": "Intermedio"
-  }
+  "nivel": "LICENCIATURA"
 }
 ```
 
 **Niveles Disponibles:**
 
-| Clave | Nombre |
-|-------|--------|
-| `"basico"` | Básico |
-| `"intermedio"` | Intermedio |
-| `"avanzado"` | Avanzado |
+| Valor | Descripción |
+|-------|-------------|
+| `"LICENCIATURA"` | Dirigido a profesores de licenciatura |
+| `"POSGRADO"` | Dirigido a profesores de posgrado |
 
 #### 6. **Fechas**
 
 ```json
 {
   "fechas": {
-    "inicio": "2025-08-09",
-    "fin": "2025-08-30",
-    "dias": "Sabatino"
+    "inicio": "2025-01-20",
+    "termino": "2025-01-24"
   }
 }
 ```
@@ -144,88 +133,40 @@ Cada objeto dentro del array `cursos` representa un curso individual con la sigu
 | Campo | Tipo | Formato | Descripción |
 |-------|------|---------|-------------|
 | `inicio` | `string` | `YYYY-MM-DD` | Fecha de inicio del curso |
-| `fin` | `string` | `YYYY-MM-DD` | Fecha de finalización |
-| `dias` | `string` | Texto libre | Días de la semana (ej: "Sabatino", "Lunes y miércoles") |
+| `termino` | `string` | `YYYY-MM-DD` | Fecha de finalización |
 
 #### 7. **Horario**
 
 ```json
 {
   "horario": {
-    "inicio": "09:00",
-    "fin": "14:00",
-    "zona": "Hrs"
-  }
-}
-```
-
-| Campo | Tipo | Formato | Descripción |
-|-------|------|---------|-------------|
-| `inicio` | `string` | `HH:MM` | Hora de inicio (formato 24h) |
-| `fin` | `string` | `HH:MM` | Hora de finalización |
-| `zona` | `string` | Texto | Zona horaria o unidad (ej: "Hrs", "CDT") |
-
-#### 8. **Descripción**
-
-```json
-{
-  "descripcion": "Reflexiona sobre el uso del lenguaje incluyente para transformar la práctica docente con perspectiva de género."
-}
-```
-
-Texto descriptivo del curso (1-2 líneas recomendadas).
-
-#### 9. **Ponentes**
-
-```json
-{
-  "ponentes": [
-    "Arq. Mónica García Juárez",
-    "Mtra. Alejandra Villa Calderón"
-  ]
-}
-```
-
-Array de strings con los nombres completos de los instructores (incluir grado académico).
-
-#### 10. **Enlaces**
-
-```json
-{
-  "enlaces": {
-    "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-    "registro": "http://zafiro.dgapa.unam.mx/registro/inicio",
-    "textoDetalles": "Detalles",
-    "textoRegistro": "Me interesa"
-  }
-}
-```
-
-| Campo | Tipo | Descripción | Valor por defecto |
-|-------|------|-------------|-------------------|
-| `detalles` | `string` (URL) | Enlace a información detallada | - |
-| `registro` | `string` (URL) | Enlace al formulario de registro | - |
-| `textoDetalles` | `string` (opcional) | Texto del botón de detalles | `"Detalles"` |
-| `textoRegistro` | `string` (opcional) | Texto del botón de registro | `"Me interesa"` |
-
-#### 11. **Contacto**
-
-```json
-{
-  "contacto": {
-    "emails": [
-      "planeacionacademica@aragon.unam.mx",
-      "cursosdgapa@aragon.unam.mx"
-    ],
-    "whatsapp": "5575169840"
+    "dias": "Lunes a viernes",
+    "horario": "11:00 a 15:00"
   }
 }
 ```
 
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
-| `emails` | `array` | Lista de correos electrónicos de contacto |
-| `whatsapp` | `string` | Número de WhatsApp (sin espacios ni guiones) |
+| `dias` | `string` | Días de la semana en que se imparte |
+| `horario` | `string` | Horario de impartición |
+
+#### 8. **Ponentes**
+
+```json
+{
+  "ponentes": [
+    "JOSE DANIEL CASTRO DIAZ",
+    "HUMBERTO MANCILLA ALONSO",
+    "-",
+    "-",
+    "-",
+    "-"
+  ]
+}
+```
+
+Array de strings con los nombres completos de los instructores. Los valores `"-"` se filtran automáticamente en el frontend.
 
 ---
 
@@ -235,26 +176,35 @@ Array de strings con los nombres completos de los instructores (incluir grado ac
 
 Cada curso se muestra como una tarjeta con:
 
-1. **Badge de categoría** (esquina superior izquierda)
+1. **Badge de programa** (esquina superior izquierda)
+   - Azul: DGAPA
+   - Verde: FES ARAGÓN
+
+2. **Badge de categoría** (esquina superior derecha)
    - Color según la categoría
    - Muestra el nombre de la categoría
 
-2. **Badge de estado** (junto al título)
+3. **Título del curso**
+   - En color primario
+   - Hover effect
+
+4. **Badge de estado** (junto al título)
    - Verde: Inscripciones abiertas
    - Azul: En curso
-   - Naranja: Cupo lleno
+   - Gris: Finalizado
    - Rojo: Cancelado
 
-3. **Metadatos**
-   - Icono de modalidad + nivel
-   - Ejemplo: "🌐 En línea · Intermedio"
+5. **Metadatos**
+   - Nivel (Licenciatura/Posgrado)
+   - Tipo (Curso/Taller/Diplomado)
+   - Horario (días y horas)
 
-4. **Fecha de inicio**
-   - Formato: "09 ago 2025"
+6. **Ponentes**
+   - Muestra hasta 2 ponentes
+   - Si hay más, muestra "+N más"
 
-5. **Botones de acción**
-   - "Detalles": Abre enlace externo
-   - "Me interesa": Abre formulario de registro
+7. **Fechas**
+   - Formato: "20 ene 2025 - 24 ene 2025"
 
 ---
 
@@ -262,48 +212,25 @@ Cada curso se muestra como una tarjeta con:
 
 ```json
 {
-  "id": "15164",
-  "tipo": "Curso",
-  "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
-  "estado": "en-curso",
-  "categoria": {
-    "clave": "genero",
-    "nombre": "Igualdad de Género"
-  },
-  "modalidad": {
-    "clave": "en-linea",
-    "nombre": "En línea",
-    "duracion": "20 horas"
-  },
-  "nivel": {
-    "clave": "intermedio",
-    "nombre": "Intermedio"
-  },
+  "id": "14321",
+  "programa": "DGAPA",
+  "nombre": "Fundamentos de Automatización de Procesos",
   "fechas": {
-    "inicio": "2025-08-09",
-    "fin": "2025-08-30",
-    "dias": "Sabatino"
+    "inicio": "2025-01-20",
+    "termino": "2025-01-24"
   },
-  "horario": {
-    "inicio": "09:00",
-    "fin": "14:00",
-    "zona": "Hrs"
-  },
-  "descripcion": "Reflexiona sobre el uso del lenguaje incluyente para transformar la práctica docente con perspectiva de género.",
+  "año": 2025,
+  "estado": "FINALIZADO",
+  "tipo": "CURSO",
+  "nivel": "LICENCIATURA",
+  "categoria": "DISCIPLINAR",
   "ponentes": [
-    "Arq. Mónica García Juárez",
-    "Mtra. Alejandra Villa Calderón"
+    "JOSE DANIEL CASTRO DIAZ",
+    "HUMBERTO MANCILLA ALONSO"
   ],
-  "enlaces": {
-    "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-    "registro": "http://zafiro.dgapa.unam.mx/registro/inicio"
-  },
-  "contacto": {
-    "emails": [
-      "planeacionacademica@aragon.unam.mx",
-      "cursosdgapa@aragon.unam.mx"
-    ],
-    "whatsapp": "5575169840"
+  "horario": {
+    "dias": "Lunes a viernes",
+    "horario": "11:00 a 15:00"
   }
 }
 ```
@@ -318,11 +245,12 @@ Cada curso se muestra como una tarjeta con:
 
 3. **Modifica** todos los campos según el nuevo curso:
    - Asigna un `id` único
-   - Actualiza `titulo`, `descripcion` y `ponentes`
+   - Define el `programa` (DGAPA o FES ARAGÓN)
+   - Actualiza `nombre`, `tipo` y `año`
    - Define el `estado` actual
-   - Selecciona `categoria`, `modalidad` y `nivel` de las tablas anteriores
+   - Selecciona `categoria` y `nivel` de las tablas anteriores
    - Configura `fechas` y `horario`
-   - Agrega `enlaces` y `contacto`
+   - Agrega `ponentes` (elimina los guiones "-" si no hay suficientes ponentes)
 
 4. **Valida** la sintaxis JSON:
    - Verifica comas entre objetos
@@ -342,13 +270,13 @@ Cada curso se muestra como una tarjeta con:
 // ❌ Incorrecto (coma extra)
 {
   "id": "123",
-  "titulo": "Mi curso",
+  "nombre": "Mi curso",
 }
 
 // ✅ Correcto
 {
   "id": "123",
-  "titulo": "Mi curso"
+  "nombre": "Mi curso"
 }
 ```
 
@@ -358,31 +286,34 @@ Cada curso se muestra como una tarjeta con:
 "estado": "abierto"
 
 // ✅ Correcto (usa solo valores permitidos)
-"estado": "inscripciones"
+"estado": "INSCRIPCIONES"
 ```
 
 ### 3. Formato de fecha incorrecto
 ```json
 // ❌ Incorrecto
-"inicio": "09/08/2025"
+"inicio": "20/01/2025"
 
 // ✅ Correcto
-"inicio": "2025-08-09"
+"inicio": "2025-01-20"
 ```
 
-### 4. Categoría no definida
+### 4. Categoría no válida
 ```json
-// ❌ Incorrecto (clave no existe)
-"categoria": {
-  "clave": "matematicas",
-  "nombre": "Matemáticas"
-}
+// ❌ Incorrecto (valor no existe)
+"categoria": "MATEMATICAS"
 
-// ✅ Correcto (usa una clave de la tabla)
-"categoria": {
-  "clave": "disciplinar",
-  "nombre": "Disciplinar"
-}
+// ✅ Correcto (usa una categoría de la tabla)
+"categoria": "DISCIPLINAR"
+```
+
+### 5. Programa no válido
+```json
+// ❌ Incorrecto
+"programa": "UNAM"
+
+// ✅ Correcto (solo DGAPA o FES ARAGÓN)
+"programa": "DGAPA"
 ```
 
 ---
@@ -390,13 +321,14 @@ Cada curso se muestra como una tarjeta con:
 ## 🎯 Filtrado en el Sitio Web
 
 Los usuarios pueden filtrar cursos por:
-- **Búsqueda de texto**: Busca en título y descripción
+- **Búsqueda de texto**: Busca en el nombre del curso
 - **Categoría**: Filtra por área temática
-- **Modalidad**: Presencial, en línea o mixta
-- **Nivel**: Básico, intermedio o avanzado
-- **Ordenamiento**: Alfabético (A-Z, Z-A) o por fecha
+- **Programa**: DGAPA o FES ARAGÓN
+- **Estado**: Inscripciones, En curso, Finalizado, Cancelado
+- **Nivel**: Licenciatura o Posgrado
+- **Ordenamiento**: Alfabético (A-Z, Z-A) o por fecha (más recientes)
 
-El estado del curso **NO** filtra automáticamente, pero se muestra visualmente para informar al usuario.
+Todos los filtros son acumulativos y funcionan en tiempo real.
 
 ---
 
@@ -415,13 +347,17 @@ Las siguientes variables CSS en `style/main.css` controlan los colores:
 --tic: #ef476f;
 --desarrollo-sostenible: #cca43b;
 --neurodivergencia: #820263;
-
-/* Estados */
---estado-inscripciones: #10b981;
---estado-en-curso: #3b82f6;
---estado-lleno: #f59e0b;
---estado-cancelado: #ef4444;
 ```
+
+**Badges de Programa:**
+- DGAPA: `bg-primary` (azul Bootstrap)
+- FES ARAGÓN: `bg-success` (verde Bootstrap)
+
+**Badges de Estado:**
+- INSCRIPCIONES: `bg-success` (verde)
+- EN CURSO: `bg-primary` (azul)
+- FINALIZADO: `bg-secondary` (gris)
+- CANCELADO: `bg-danger` (rojo)
 
 ---
 
@@ -436,13 +372,13 @@ Para dudas o problemas con el archivo JSON:
 ## 📅 Última Actualización
 
 **Fecha**: Octubre 2025  
-**Versión del esquema**: 1.1 (con campo `estado`)
+**Versión del esquema**: 2.0 (estructura actualizada con datos reales del Panel de Monitoreo)
 
 ---
 
 ## 🔐 Notas de Seguridad
 
 - ⚠️ No incluir información sensible en el JSON
-- ✅ Validar URLs antes de publicar
-- ✅ Verificar que los enlaces funcionen correctamente
+- ✅ Verificar que los datos provengan del Panel de Monitoreo oficial
 - ✅ Mantener backup del archivo antes de modificaciones grandes
+- ✅ Validar la estructura JSON antes de publicar cambios

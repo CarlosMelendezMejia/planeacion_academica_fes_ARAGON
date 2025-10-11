@@ -1138,3 +1138,82 @@ body {
 .accordion-button i {
     font-size: 1.25rem;
 }
+
+/* ========================================
+   Badge de Programa (DGAPA / FES ARAGÓN)
+   ======================================== */
+
+.programa-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos mejorados para cards de cursos */
+.course-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.course-title {
+    color: var(--primary-color);
+    line-height: 1.4;
+}
+
+.course-meta-info {
+    line-height: 1.6;
+}
+
+.course-ponentes-container {
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.course-ponentes {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Estados con colores Bootstrap actualizados */
+.estado-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.bg-primary {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+.bg-secondary {
+    background-color: #6c757d !important;
+    color: white !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* Opacidad para cursos cancelados */
+.course-card[data-estado="CANCELADO"] {
+    opacity: 0.75;
+}

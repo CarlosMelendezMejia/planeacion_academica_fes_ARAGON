@@ -1,315 +1,2478 @@
 {
-  "programa": "PASD 2025",
-  "organiza": {
-    "instituciones": [
-      "DGAPA",
-      "UNAM FES Aragón",
-      "Unidad de Planeación"
-    ]
+  "metadata": {
+    "total_cursos": 95,
+    "fecha_generacion": "2025-10-11 17:21:19",
+    "fuente": "Panel de Monitoreo Depto. Planeación Académica"
   },
   "cursos": [
     {
+      "id": "14321",
+      "programa": "DGAPA",
+      "nombre": "Fundamentos de Automatización de Procesos",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "JOSE DANIEL CASTRO DIAZ",
+        "HUMBERTO MANCILLA ALONSO",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "11:00 a 15:00"
+      }
+    },
+    {
+      "id": "14325",
+      "programa": "DGAPA",
+      "nombre": "Emociones en la docencia: docentes nóveles y sus narrativas",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "MARIA LUISA MORALES BAUTISTA",
+        "BRENDA ESTHER ESCUTIA CRUZ",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14326",
+      "programa": "DGAPA",
+      "nombre": "Fundamentos de Robótica Industrial con RoboDK",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "JOSE DANIEL CASTRO DIAZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "11:00 a 15:00"
+      }
+    },
+    {
+      "id": "14327",
+      "programa": "DGAPA",
+      "nombre": "Investigación Cualitativa: Enfoques metodológicos y Herramientas",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO A LA INVESTIGACIÓN",
+      "ponentes": [
+        "SUSANA JEANINE MONDRAGON AGUILAR",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14329",
+      "programa": "DGAPA",
+      "nombre": "Reflexiones docentes en la Universidad: nuevos retos y desafíos en la comunidad estudiantil del siglo XXI",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "JOSE LUIS LOPEZ RAMIREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14332",
+      "programa": "DGAPA",
+      "nombre": "Teorías en torno al Delito",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        " BERNABE LUNA RAMOS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 11:00"
+      }
+    },
+    {
+      "id": "14336",
+      "programa": "DGAPA",
+      "nombre": "Enseñanza y didáctica del Derecho",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        " BRENDA CASTILLO MUÑOZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14349",
+      "programa": "DGAPA",
+      "nombre": "Socioconstructivismo del modelo educativo y el quehacer docente de la licenciatura en Sociología",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "ROSARIO SUSANA CORONA ARROYO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14352",
+      "programa": "DGAPA",
+      "nombre": "Elaboración de Objetos de Aprendizaje: Video",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "ISMAEL DIAZ RANGEL",
+        "JUAN MANUEL HERNANDEZ CONTRERAS",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "14364",
+      "programa": "DGAPA",
+      "nombre": "Didáctica para el Análisis y Optimización de Procesos",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        " ARTURO FUENTES ZENON",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14366",
+      "programa": "DGAPA",
+      "nombre": "La Huella del Diseño Industrial: Introducción al Desarrollo Sustentable y Sustentabilidad",
+      "fechas": {
+        "inicio": "2025-01-14",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "HUGO ALONSO NAVARRETE AVILA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14369",
+      "programa": "DGAPA",
+      "nombre": "Estrategias de enseñanza-aprendizaje constructivistas para docentes",
+      "fechas": {
+        "inicio": "2025-02-01",
+        "termino": "2025-02-22"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "GABRIELA DÍAZ MONTAÑO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "14370",
+      "programa": "DGAPA",
+      "nombre": "Rusia: pensamiento geopolítico y política exterior, fundamentos y enfoques nacionales para su estudio",
+      "fechas": {
+        "inicio": "2025-01-13",
+        "termino": "2025-01-17"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "IMELDA IBAÑEZ GUZMAN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "11:00 a 15:00"
+      }
+    },
+    {
+      "id": "14379",
+      "programa": "DGAPA",
+      "nombre": "Generalidades para el Estudio del Derecho Constitucional Comparado",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "ISIDRO MENDOZA GARCIA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14383",
+      "programa": "DGAPA",
+      "nombre": "Hablemos sobre consentimiento sexual y prevención de las violencias de género",
+      "fechas": {
+        "inicio": "2025-01-08",
+        "termino": "2025-01-22"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "MYRIAM BRITO DOMINGUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Miércoles a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "14409",
+      "programa": "DGAPA",
+      "nombre": "Feminismo, política y emociones",
+      "fechas": {
+        "inicio": "2025-01-20",
+        "termino": "2025-01-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        " SOL CARDENAS ARGUEDAS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14422",
+      "programa": "DGAPA",
+      "nombre": "Educación inclusiva: bases para la transformación de las prácticas y la cultura académica",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "CANCELADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "PATRICIA BROGNA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "12:00 a 15:00"
+      }
+    },
+    {
+      "id": "14428",
+      "programa": "DGAPA",
+      "nombre": "El uso de la inteligencia artificial en la publicación científica",
+      "fechas": {
+        "inicio": "2025-02-01",
+        "termino": "2025-03-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO A LA INVESTIGACIÓN",
+      "ponentes": [
+        "YOLANDA JURADO ROJAS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14431",
+      "programa": "DGAPA",
+      "nombre": "Universitarios actuales. Nuevas oportunidades en el aula",
+      "fechas": {
+        "inicio": "2025-02-15",
+        "termino": "2025-03-15"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "RAQUEL MUÑOZ FLORES",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14443",
+      "programa": "DGAPA",
+      "nombre": "Proceso creativo para elaborar un libro de texto con base en el pensamiento crítico",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "YOLANDA JURADO ROJAS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "18:00 a 20:00"
+      }
+    },
+    {
+      "id": "14446",
+      "programa": "DGAPA",
+      "nombre": "Estrategias de búsqueda de información digital especializada para la docencia y la investigación en tiempos de Inteligencia Artificial",
+      "fechas": {
+        "inicio": "2025-08-04",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "JORGE PÉREZ GÓMEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14448",
+      "programa": "DGAPA",
+      "nombre": "Optimización I: Cálculo de Variaciones en Economía",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "JORGE ANTONIO SILVA CASTRO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14449",
+      "programa": "DGAPA",
+      "nombre": "Herramientas para incorporar la Perspectiva de Género al aula",
+      "fechas": {
+        "inicio": "2025-03-29",
+        "termino": "2025-05-03"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "HUGO CRUZ REYES",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14450",
+      "programa": "DGAPA",
+      "nombre": "Herramientas de Inteligencia Artificial generativa para docentes",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "VÍCTOR MANUEL SÁNCHEZ SÁNCHEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "11:00 a 15:00"
+      }
+    },
+    {
+      "id": "14455",
+      "programa": "DGAPA",
+      "nombre": "Estrategias e instrumentos de evaluación integral de y para el aprendizaje",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "GABRIELA DÍAZ MONTAÑO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14456",
+      "programa": "DGAPA",
+      "nombre": "Entornos seguros y pacíficos: Herramientas y estrategias restaurativas para la resolución de conflictos en el aula",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "KAREN GARCÍA VELÁZQUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "13:00 a 15:00"
+      }
+    },
+    {
+      "id": "14457",
+      "programa": "DGAPA",
+      "nombre": "Principios éticos, morales y obligaciones jurídicas para fomentar una práctica docente responsable, justa y equitativa en México",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-16"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "RAMÓN LOAEZA SALMERÓN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Jueves",
+        "horario": "17:00 a 21:00"
+      }
+    },
+    {
+      "id": "14458",
+      "programa": "DGAPA",
+      "nombre": "Alfabetización Mediática e Informacional (AMI) y desarrollo de competencias digitales en la sociedad mexicana",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "MIGUEL ANGEL RIVERA HERRERA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14459",
+      "programa": "DGAPA",
+      "nombre": "Taller de perspectiva de género para la docencia",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "MARIA FERNANDA LAVIN ROBLES",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14460",
+      "programa": "DGAPA",
+      "nombre": "Estrategias didácticas para promover la inteligencia emocional dentro del aula",
+      "fechas": {
+        "inicio": "2025-03-07",
+        "termino": "2025-04-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "MARIA ESTHER JIMENEZ BECERRA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Viernes",
+        "horario": "17:00 a 21:00"
+      }
+    },
+    {
+      "id": "14461",
+      "programa": "DGAPA",
+      "nombre": "Metodologías activas para el aprendizaje autónomo",
+      "fechas": {
+        "inicio": "2025-06-07",
+        "termino": "2025-06-28"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "JESSICA SANTANA RODRÍGUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "14462",
+      "programa": "DGAPA",
+      "nombre": "Estrategias pedagógicas de bienestar emocional en el aula",
+      "fechas": {
+        "inicio": "2025-08-04",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "JESSICA SANTANA RODRÍGUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14463",
+      "programa": "DGAPA",
+      "nombre": "Introducción a la Inteligencia Artificial: Aplicaciones y perspectivas en la vida cotidiana",
+      "fechas": {
+        "inicio": "2025-03-08",
+        "termino": "2025-03-29"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "LAURA PATRICIA SÁNCHEZ GUTIÉRREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "08:00 a 13:00"
+      }
+    },
+    {
+      "id": "14464",
+      "programa": "DGAPA",
+      "nombre": "Las habilidades socioemocionales y su importancia en el fortalecimiento del estudiantado.",
+      "fechas": {
+        "inicio": "2025-06-07",
+        "termino": "2025-06-28"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "COPELIA CONCEPCION ROSAS GUEVARA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 A 14:00"
+      }
+    },
+    {
+      "id": "14465",
+      "programa": "DGAPA",
+      "nombre": "Estrategias para el cerebro emocional y social dentro del aula, favoreciendo las funciones ejecutivas/cognitivas, desde las neurociencias",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "YOLANDA NAVARRETE CAMACHO",
+        "CELIA GUILLERMINA ROSAS ALBAERRÁN",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "13:00 a 17:00"
+      }
+    },
+    {
+      "id": "14508",
+      "programa": "DGAPA",
+      "nombre": "Resolución de problemas para el docente y su aplicación en el aula",
+      "fechas": {
+        "inicio": "2025-08-30",
+        "termino": "2025-09-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "BRENDA PAOLA MÉNDEZ ROMERO",
+        "BRENDA YADIRA GONZÁLEZ LÓPEZ",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "10:00 a 15:00"
+      }
+    },
+    {
+      "id": "14512",
+      "programa": "DGAPA",
+      "nombre": "Intervención humanista ante situaciones dificiles: crisis, primeros auxilios psioclógicos y acompañamiento ante la pérdida",
+      "fechas": {
+        "inicio": "2025-08-04",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "ÁNGEL CORCHADO VARGAS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14513",
+      "programa": "DGAPA",
+      "nombre": "Inteligencia Artificial (IA) desde cero: Tecnologías, Arquitecturas y Aplicaciones para docentes",
+      "fechas": {
+        "inicio": "2025-06-30",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "GEORGINA GUADALUPE ROSAS GUEVARA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14514",
+      "programa": "DGAPA",
+      "nombre": "El uso de aplicaciones digitales en el espacio académico: una nueva visión en la impartición de clases",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "SANDRA CAROLINA ESQUIVEL SERAFIN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 12:00"
+      }
+    },
+    {
+      "id": "14516",
+      "programa": "DGAPA",
+      "nombre": "La neuroeducación: una revolución en la enseñanza para cambiar el mundo",
+      "fechas": {
+        "inicio": "2025-08-02",
+        "termino": "2025-08-23"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "DULCE ANGÉLICA ESCARTIN VÁZQUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "14517",
+      "programa": "DGAPA",
+      "nombre": "Herramientas para la redacción y estructura literaria como apoyo en la docencia",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "MIGUEL ALEJANDRO RIVERA PEDROZA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14518",
+      "programa": "DGAPA",
+      "nombre": "La planificación y diseño de experiencias de aprendizaje auténtico",
+      "fechas": {
+        "inicio": "2025-08-02",
+        "termino": "2025-08-23"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "SILVIA AMADOR HERNÁNDEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "14729",
+      "programa": "DGAPA",
+      "nombre": "Manejo del estrés como un proceso en la búsqueda del bienestar psicológico",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "ANGEL CORCHADO VARGAS",
+        "ANGELICA ENEDINA M9ONTIEL ROSALES",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14519",
+      "programa": "DGAPA",
+      "nombre": "Herramientas para el diseño de proyectos de investigación",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO A LA INVESTIGACIÓN",
+      "ponentes": [
+        "ANTONIO AGUILAR HERRERA",
+        "ROSARIO BERENICE BANDA",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14520",
+      "programa": "DGAPA",
+      "nombre": "Violencia de género y religiones: Una mirada desde los derechos humanos",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "LUZ GALINDO VILCHIS",
+        "TANIA LIZBETH MELENDEZ ELIZALDE",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14636",
+      "programa": "DGAPA",
+      "nombre": "Producción de objetos de aprendizaje en su vertiente video",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "ISMAEL DIAZ RANGEL",
+        "JUAN MANUEL HERNANDEZ CONTRERAS",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "14853",
+      "programa": "DGAPA",
+      "nombre": "Estrategias didácticas para grupos numerosos",
+      "fechas": {
+        "inicio": "2025-06-17",
+        "termino": "2025-07-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "DOCENCIA INICIAL",
+      "ponentes": [
+        "DULCE ANGELICA ESCARTIN VAZQUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14521",
+      "programa": "DGAPA",
+      "nombre": "Masculinidades en el aula: tips para trabajar con hombres universitarios",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "ROBERTO MIRANDA CARDOSO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "16:00 A 20:00"
+      }
+    },
+    {
+      "id": "14522",
+      "programa": "DGAPA",
+      "nombre": "Masculinidades sin violencia en el aula",
+      "fechas": {
+        "inicio": "2025-06-02",
+        "termino": "2025-06-11"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "GERARDO MEJIA NUÑEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes, Miércoles y Viernes",
+        "horario": "10:00 A 14:00"
+      }
+    },
+    {
+      "id": "14668",
+      "programa": "DGAPA",
+      "nombre": "Violencia digital contra las mujeres: desde Olimpia hasta la IA",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "ANDREA SAMANIEGO SÁNCHEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14716",
+      "programa": "DGAPA",
+      "nombre": "Masculinidades en el aula: recomendaciones para trabajar con hombres jóvenes",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "ROBERTO MIRANDA CARDOSO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14779",
+      "programa": "DGAPA",
+      "nombre": "Introducción de un docente novel en el bachillerato: ¿Práctica docente, diversidad de estudiantes e institución?",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "CANCELADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "DOCENCIA INICIAL",
+      "ponentes": [
+        "JOSE LUIS LOPEZ RAMIREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14523",
+      "programa": "DGAPA",
+      "nombre": "Sexo, género, saberes científicos, discursos de ultraderecha y movimientos anti-género",
+      "fechas": {
+        "inicio": "2025-06-03",
+        "termino": "2025-06-24"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "LUCIA GABRIELA CICCIA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Martes y Jueves",
+        "horario": "13:00 A 17:00"
+      }
+    },
+    {
+      "id": "14605",
+      "programa": "DGAPA",
+      "nombre": "Usos, riesgos y estrategias de concientización sobre IA en el Aula",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "JESSICA SANTANA RODRÍGUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14742",
+      "programa": "DGAPA",
+      "nombre": "Emociones, bienestar y bellas artes: experiencias de expresión a través del arte",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "EDUARDO ISMAEL RUIZ LOPEZ",
+        "ANGEL CORCHADO VARGAS",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14524",
+      "programa": "DGAPA",
+      "nombre": "Prevención y gestión de la violencia digital en entornos educativos",
+      "fechas": {
+        "inicio": "2025-06-02",
+        "termino": "2025-06-06"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "JOSE ARTURO SALCEDO MENA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "16:00 A 20:00"
+      }
+    },
+    {
+      "id": "14743",
+      "programa": "DGAPA",
+      "nombre": "El aula invertida como método de enseñanza para fomentar el aprendizaje autónomo en adolescentes",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-30"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "SANDRA HERNANDEZ LOZADA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "14731",
+      "programa": "DGAPA",
+      "nombre": "La docencia y la evaluación en el aula ante la diversidad del alumnado de la ENP",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "FERNANDO JAVIER POLO MARTINEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14525",
+      "programa": "DGAPA",
+      "nombre": "Comunicar para cuidar: Desarrollo socioemocional y bienestar docente  ",
+      "fechas": {
+        "inicio": "2025-08-23",
+        "termino": "2025-09-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "ÁNGEL CORCHADO VARGAS",
+        "ANGÉLICA ENEDINA MONTIEL ROSALES",
+        "EDUARDO ISMAEL RUIZ LÓPEZ",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14526",
+      "programa": "DGAPA",
+      "nombre": "Creación de contenidos y uso de redes sociodigitales para la docencia",
+      "fechas": {
+        "inicio": "2025-03-01",
+        "termino": "2025-03-29"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "EDUARDO MATEO CRUZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
+      "id": "14782",
+      "programa": "DGAPA",
+      "nombre": "Constructivismo, socioconstructivismo y transversalidad educativa: teoría y práctica",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "RODOLFO QUIROZ SÁNCHEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "17:00 a 21:00"
+      }
+    },
+    {
+      "id": "14715",
+      "programa": "DGAPA",
+      "nombre": "Curación de contenidos digitales y gestión de recursos educativos",
+      "fechas": {
+        "inicio": "2025-06-30",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "ERIKA RUEDA RAMOS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14631",
+      "programa": "DGAPA",
+      "nombre": "Autocuidado docente: Clave para mejorar el aprendizaje",
+      "fechas": {
+        "inicio": "2025-06-30",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "RAQUEL MUÑOZ FLORES",
+        "ANGELICA ANGUIANO MOLINA",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14709",
+      "programa": "DGAPA",
+      "nombre": "¿Cómo atender la diversidad en el aula? Herramientas docentes para trabajar con estudiantes con discapacidad",
+      "fechas": {
+        "inicio": "2025-06-30",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "DANIELA MENDOZA JIMENEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "17:00 a 21:00"
+      }
+    },
+    {
+      "id": "14527",
+      "programa": "DGAPA",
+      "nombre": "Habilidades blandas en los proyectos de investigación",
+      "fechas": {
+        "inicio": "2025-06-23",
+        "termino": "2025-07-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO A LA INVESTIGACIÓN",
+      "ponentes": [
+        "ELIA VERA MORALES",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "08:00 a 11:00"
+      }
+    },
+    {
+      "id": "14620",
+      "programa": "DGAPA",
+      "nombre": "Introducción a las máquinas con router CNC",
+      "fechas": {
+        "inicio": "2025-02-10",
+        "termino": "2025-02-14"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "DISCIPLINAR",
+      "ponentes": [
+        "FRANCISCO DE MATIAS AGUILAR",
+        "GERARDO GONZALEZ HERNANDEZ",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "14:00 a 19:00"
+      }
+    },
+    {
+      "id": "14666",
+      "programa": "DGAPA",
+      "nombre": "Violencia digital contra las mujeres: desde Olimpia hasta la IA",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "ANDREA SAMANIEGO SÁNCHEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "16:00 A 20:00"
+      }
+    },
+    {
+      "id": "14749",
+      "programa": "DGAPA",
+      "nombre": "Tecnologías, medios y plataformas digitales como herramientas para la docencia en la educación superior",
+      "fechas": {
+        "inicio": "2025-05-26",
+        "termino": "2025-05-30"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "EMANUEL GALICIA MARTÍNEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "14752",
+      "programa": "DGAPA",
+      "nombre": "Diplomado con perspectiva de género y desarrollo docente",
+      "fechas": {
+        "inicio": "2025-05-26",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "NATALIA EDITH TENORIO TOVAR",
+        "FREDER BIDEGAIN GONZÁLEZ",
+        "DANIELA MENDOZA JIMÉNEZ",
+        "ROBERTO MIRANDA CARDOSO",
+        "ARIANA MARLEN ESCMILLA PEDRAZA",
+        "MARISELA VILLEGAS PACHECO"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "18:00 a 20:00"
+      }
+    },
+    {
+      "id": "14834",
+      "programa": "DGAPA",
+      "nombre": "Diplomado para la innovación docente; habilidades, estrategias y recursos",
+      "fechas": {
+        "inicio": "2025-05-26",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "RODOLFO QUIROZ SÁNCHEZ",
+        "SILVIA AMADOR HERNÁNDEZ",
+        "JESSICA SANTANA RODRÍGUEZ",
+        "JORGE LUIS CANDELARIO ALAVEZ",
+        "MARÍA FERNANDA LAVÍN ROBLES",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "18:00 a 20:00"
+      }
+    },
+    {
+      "id": "14898",
+      "programa": "DGAPA",
+      "nombre": "Diplomado Inteligencia Artificial (IA) en el contexto académico, y sus herramientas",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "JOSE ARTURO SALCEDO MENA",
+        "JORGE PEREZ GOMEZ",
+        "MONICA ORTIZ GARCIA",
+        "ERIKA RUEDA RAMOS",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "17:00 a 20:00"
+      }
+    },
+    {
+      "id": "14718",
+      "programa": "DGAPA",
+      "nombre": "Integrando la Inteligencia Artificial en la Educación: un enfoque práctico para Docentes",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "LAURA PATRICIA SÁNCHEZ GUTIÉRREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 21:00"
+      }
+    },
+    {
+      "id": "14740",
+      "programa": "DGAPA",
+      "nombre": "Guardianes para la prevención del suicidio",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "CAROLINA SANTILLA TORRES TORIJA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "14707",
+      "programa": "DGAPA",
+      "nombre": "Primeros Auxilios Psicológicos. Herramientas para docentes",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-06"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "KAREN GARCÍA VELÁZQUEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "11:00 a 14:00"
+      }
+    },
+    {
+      "id": "14745",
+      "programa": "DGAPA",
+      "nombre": "Inclusión de estudiantes con discapacidad en la educación media superior y superior",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "CANCELADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "PATRICIA BROGNA",
+        "BLANCA ESTELA JACOBO ZARDEL",
+        "CELIA FACIO SALAZAR",
+        "NORMA CRUZ MALDONADO",
+        "BERENICE PEREZ RAMIREZ",
+        "GERMAN EMMANUEL BAUTISTA HERNANDEZ"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "12:00 a 15:00"
+      }
+    },
+    {
+      "id": "14780",
+      "programa": "DGAPA",
+      "nombre": "Formación técnica en primeros auxilios psicológicos para docentes UNAM",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "ALDO AZAEL ROJAS SALAZAR",
+        "ANGEL CORCHADO VARGAS",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "18:00 a 20:00"
+      }
+    },
+    {
+      "id": "14872",
+      "programa": "DGAPA",
+      "nombre": "Diplomado con perspectiva de género y desarrollo docente (bach)",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "BACHILLERATO",
+      "categoria": "IGUALDAD DE GÉNERO",
+      "ponentes": [
+        "NATALIA EDITH TENORIO TOVAR",
+        "FREDER BIDEGAIN GONZÁLEZ",
+        "DANIELA MENDOZA JIMÉNEZ ",
+        "ROBERTO MIRANDA CARDOSO",
+        "ARIANA ESCAMILLA MARLEN ESCAMILLA PEDRAZA",
+        "MARISELA VILLEGAS PACHECO"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 14:00"
+      }
+    },
+    {
+      "id": "14881",
+      "programa": "DGAPA",
+      "nombre": "Diplomado en Didáctica, Estrategias pedagógicas y Oratoria educativa",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "BACHILLERATO",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "RODOLFO QUIROZ SÁNCHEZ",
+        "SILVIA AMADOR HERNÁNDEZ ",
+        "ARIANA ESCAMILLA MARLEN ESCAMILLA PEDRAZA",
+        "JESSICA SANTANA RODRÍGUEZ",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "18:00 a 21:00"
+      }
+    },
+    {
+      "id": "14866",
+      "programa": "DGAPA",
+      "nombre": "Diplomado las habilidades blandas desde una perspectiva de género: su práctica en docentes y las implicaciones en el estudiantado de ENP y CCH",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "DIPLOMADO",
+      "nivel": "BACHILLERATO",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "RICARDO SOTO RAMÍREZ",
+        "COPELIA CONCEPCIÓN ROSAS GUEVARA",
+        "FERNANDO JAVIER POLO MARTÍNEZ",
+        "ALEJANDRA VALENCIA CRUZ",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "-",
+      "programa": "DGAPA",
+      "nombre": "La salud del docente y hábitos de autocuidado",
+      "fechas": {
+        "inicio": "2025-06-16",
+        "termino": "2025-06-20"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "MICRO CURSO",
+      "nivel": "NO APLICA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "COPELIA CONCEPCIÓN ROSAS GUEVARA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "-",
+      "programa": "DGAPA",
+      "nombre": "Introducción a la Inteligencia Artificial Generativa y su potencial en el campo educativo",
+      "fechas": {
+        "inicio": "2025-06-25",
+        "termino": "2025-06-27"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "MICRO CURSO",
+      "nivel": "NO APLICA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "DAMARIS LÓPEZ RAMÍREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "25 junio 16:00 a 20:00 26 y 27 junio 16:00 a 19:00"
+      }
+    },
+    {
+      "id": "-",
+      "programa": "DGAPA",
+      "nombre": "Escritura Docente Efectiva: del Aula al Documento",
+      "fechas": {
+        "inicio": "2025-06-30",
+        "termino": "2025-07-04"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "MICRO CURSO",
+      "nivel": "NO APLICA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
+      "ponentes": [
+        "MIGUEL ALEJANDRO RIVERA PEDROZA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 13:00"
+      }
+    },
+    {
+      "id": "-",
+      "programa": "DGAPA",
+      "nombre": "Aplicaciones digitales, en el plan por competencias",
+      "fechas": {
+        "inicio": "2025-07-28",
+        "termino": "2025-08-01"
+      },
+      "año": 2025,
+      "estado": "CANCELADO",
+      "tipo": "MICRO CURSO",
+      "nivel": "NO APLICA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "SANDRA CAROLINA ESQUIVEL SERAFIN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "11:00 a 14:00"
+      }
+    },
+    {
+      "id": "-",
+      "programa": "DGAPA",
+      "nombre": "Prevención de la violencia en la comunicación",
+      "fechas": {
+        "inicio": "2025-08-04",
+        "termino": "2025-08-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "MICRO CURSO",
+      "nivel": "NO APLICA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "GEORGINA BARRAZA CARBAJAL",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes, Miércoles y Viernes",
+        "horario": "09:00 a 12:00"
+      }
+    },
+    {
+      "id": "14932",
+      "programa": "DGAPA",
+      "nombre": "Estigma, prejuicio y estereotipo: sus implicaciones en el bienestar psicológico",
+      "fechas": {
+        "inicio": "2025-06-07",
+        "termino": "2025-07-05"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE",
+      "ponentes": [
+        "ANGEL CORCHADO VARGAS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 A 13:00"
+      }
+    },
+    {
+      "id": "15016",
+      "programa": "DGAPA",
+      "nombre": "Herramientas de inteligencia artificial para la docencia en Ciencias Sociales",
+      "fechas": {
+        "inicio": "2025-06-09",
+        "termino": "2025-06-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "JAIME ALBERTO COELLO MANUELL",
+        "RICARDO RODRIGUEZ INDA",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "15059",
+      "programa": "DGAPA",
+      "nombre": "Inteligencia artificial aplicada a la enseñanza y la investigación",
+      "fechas": {
+        "inicio": "2025-08-04",
+        "termino": "2025-08-08"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "ERIKA RUEDA RAMOS",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "10:00 a 14:00"
+      }
+    },
+    {
+      "id": "15130",
+      "programa": "DGAPA",
+      "nombre": "Creación de bases de datos y reportes automáticos a partir de Google Sheets en apoyo a la práctica docente",
+      "fechas": {
+        "inicio": "2025-08-23",
+        "termino": "2025-09-13"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "MARIO RODRIGUEZ CASTILLO",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
+      }
+    },
+    {
+      "id": "15135",
+      "programa": "DGAPA",
+      "nombre": "Transversalización de los Objetivos de Desarrollo Sostenible (ODS) en los programas de trabajo",
+      "fechas": {
+        "inicio": "2025-08-18",
+        "termino": "2025-08-22"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "RESPONSABILIDAD GLOBAL Y DESARROLLO SOSTENIBLE",
+      "ponentes": [
+        "IVAN FACUNDO RUBINSTEIN",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ],
+      "horario": {
+        "dias": "Lunes a viernes",
+        "horario": "16:00 a 20:00"
+      }
+    },
+    {
+      "id": "15136",
+      "programa": "DGAPA",
+      "nombre": "IA Generativa y Metaverso: experiencias académicas multidisciplinarias en Humanidades, ciencias exactas y sociales.",
+      "fechas": {
+        "inicio": "2025-08-02",
+        "termino": "2025-08-30"
+      },
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
+      "ponentes": [
+        "LEONEL CARRANCO GUERRA",
+        "JAVIER GARCIA FIGUEROA",
+        "MA. FERNANDA GUTIERREZ TORRES",
+        "HUMBERTO ISLAS RAMOS",
+        "ARTURO OCAMPO ALVAREZ",
+        "-"
+      ],
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 13:00"
+      }
+    },
+    {
       "id": "15164",
-      "tipo": "Curso",
-      "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
-      "estado": "en-curso",
-      "categoria": {
-        "clave": "genero",
-        "nombre": "Igualdad de Género"
-      },
-      "modalidad": {
-        "clave": "en-linea",
-        "nombre": "En línea",
-        "duracion": "20 horas"
-      },
-      "nivel": {
-        "clave": "intermedio",
-        "nombre": "Intermedio"
-      },
+      "programa": "DGAPA",
+      "nombre": "Curso Taller de lenguaje incluyente para una docencia con perspectiva de género",
       "fechas": {
         "inicio": "2025-08-09",
-        "fin": "2025-08-30",
-        "dias": "Sabatino"
+        "termino": "2025-08-30"
       },
-      "horario": {
-        "inicio": "09:00",
-        "fin": "14:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Reflexiona sobre el uso del lenguaje incluyente para transformar la práctica docente con perspectiva de género.",
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "IGUALDAD DE GÉNERO",
       "ponentes": [
-        "Arq. Mónica García Juárez",
-        "Mtra. Alejandra Villa Calderón"
+        "MÓNICA GARCÍA JUAREZ",
+        "ALEJANDRA VILLA CALDERÓN",
+        "-",
+        "-",
+        "-",
+        "-"
       ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "http://zafiro.dgapa.unam.mx/registro/inicio"
-      },
-      "contacto": {
-        "emails": [
-          "planeacionacademica@aragon.unam.mx",
-          "cursosdgapa@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
       }
     },
     {
-      "id": "PASD-2001",
-      "tipo": "Curso",
-      "titulo": "Herramientas Digitales para Docencia",
-      "estado": "inscripciones",
-      "categoria": {
-        "clave": "tic",
-        "nombre": "Conocimiento y Uso de TIC"
-      },
-      "modalidad": {
-        "clave": "en-linea",
-        "nombre": "En línea",
-        "duracion": "16 horas"
-      },
-      "nivel": {
-        "clave": "basico",
-        "nombre": "Básico"
-      },
+      "id": "15166",
+      "programa": "DGAPA",
+      "nombre": "Despertando Mentes: Estrategias Didácticas para un Aula Dinámica",
       "fechas": {
-        "inicio": "2025-11-15",
-        "fin": "2025-12-06",
-        "dias": "Sabatino"
+        "inicio": "2025-08-09",
+        "termino": "2025-08-30"
       },
-      "horario": {
-        "inicio": "09:00",
-        "fin": "12:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Uso efectivo de plataformas y aplicaciones para planear clases, evaluar y dar seguimiento.",
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
       "ponentes": [
-        "Lic. Fernanda López",
-        "Mtro. Jorge Martínez"
+        "ALBERTO JORGE BARONA OMAÑA",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-tic"
-      },
-      "contacto": {
-        "emails": [
-          "planeacionacademica@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
+      "horario": {
+        "dias": "Sábado",
+        "horario": "09:00 a 14:00"
       }
     },
     {
-      "id": "PASD-2002",
-      "tipo": "Curso",
-      "titulo": "Estrategias de Evaluación Auténtica y Formativa",
-      "estado": "lleno",
-      "categoria": {
-        "clave": "didactico",
-        "nombre": "Apoyo didáctico-pedagógico"
-      },
-      "modalidad": {
-        "clave": "presencial",
-        "nombre": "Presencial",
-        "duracion": "20 horas"
-      },
-      "nivel": {
-        "clave": "intermedio",
-        "nombre": "Intermedio"
-      },
+      "id": "15168",
+      "programa": "DGAPA",
+      "nombre": "Introducción a la Inteligencia Artificial: Aplicaciones y perspectivas en la vida cotidiana",
       "fechas": {
-        "inicio": "2025-10-28",
-        "fin": "2025-11-01",
-        "dias": "Entre semana"
+        "inicio": "2025-08-09",
+        "termino": "2025-08-30"
       },
-      "horario": {
-        "inicio": "16:00",
-        "fin": "19:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Diseña instrumentos y rúbricas para valorar desempeños reales en el aula.",
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
       "ponentes": [
-        "Dra. Lorena Pérez"
+        "LAURA PATRICIA SÁNCHEZ GUTIÉRREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-evaluacion"
-      },
-      "contacto": {
-        "emails": [
-          "cursosdgapa@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
+      "horario": {
+        "dias": "Sábado",
+        "horario": "08:00 a 13:00"
       }
     },
     {
-      "id": "PASD-2003",
-      "tipo": "Curso",
-      "titulo": "Metodología de la Investigación para Docentes",
-      "estado": "inscripciones",
-      "categoria": {
-        "clave": "investigacion",
-        "nombre": "Apoyo a la investigación"
-      },
-      "modalidad": {
-        "clave": "mixta",
-        "nombre": "Mixta",
-        "duracion": "24 horas"
-      },
-      "nivel": {
-        "clave": "basico",
-        "nombre": "Básico"
-      },
+      "id": "15175",
+      "programa": "DGAPA",
+      "nombre": "Creación de actividades educativas interactivas",
       "fechas": {
-        "inicio": "2026-01-12",
-        "fin": "2026-02-02",
-        "dias": "Lunes y miércoles"
+        "inicio": "2025-08-02",
+        "termino": "2025-08-16"
       },
-      "horario": {
-        "inicio": "17:00",
-        "fin": "20:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Enfoques, métodos y ética para formular proyectos académicos rigurosos.",
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "APOYO DIDÁCTICO-PEDAGÓGICO",
       "ponentes": [
-        "Dr. Ricardo Hernández"
+        "JORGE LUIS CANDELARIO ALAVEZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-investigacion"
-      },
-      "contacto": {
-        "emails": [
-          "planeacionacademica@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
+      "horario": {
+        "dias": "Sábado",
+        "horario": "08:00 a 14:00"
       }
     },
     {
-      "id": "PASD-2004",
-      "tipo": "Curso",
-      "titulo": "Didáctica para la Docencia Inicial",
-      "estado": "cancelado",
-      "categoria": {
-        "clave": "docencia",
-        "nombre": "Docencia inicial"
-      },
-      "modalidad": {
-        "clave": "presencial",
-        "nombre": "Presencial",
-        "duracion": "18 horas"
-      },
-      "nivel": {
-        "clave": "basico",
-        "nombre": "Básico"
-      },
+      "id": "15178",
+      "programa": "DGAPA",
+      "nombre": "Introducción a la Inteligencia Artificial Generativa y su potencial en el campo educativo",
       "fechas": {
-        "inicio": "2025-11-05",
-        "fin": "2025-11-19",
-        "dias": "Miércoles"
+        "inicio": "2025-08-29",
+        "termino": "2025-09-19"
       },
-      "horario": {
-        "inicio": "10:00",
-        "fin": "13:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Fundamentos prácticos para tus primeras experiencias frente a grupo.",
+      "año": 2025,
+      "estado": "FINALIZADO",
+      "tipo": "CURSO",
+      "nivel": "LICENCIATURA",
+      "categoria": "CONOCIMIENTO Y USO DE TIC",
       "ponentes": [
-        "Mtra. Adriana Torres"
+        "DAMARIS LOPEZ RAMIREZ",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-docencia"
-      },
-      "contacto": {
-        "emails": [
-          "planeacionacademica@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
-      }
-    },
-    {
-      "id": "PASD-2005",
-      "tipo": "Curso",
-      "titulo": "Perspectiva de Género en el Aula",
-      "estado": "inscripciones",
-      "categoria": {
-        "clave": "genero",
-        "nombre": "Igualdad de Género"
-      },
-      "modalidad": {
-        "clave": "en-linea",
-        "nombre": "En línea",
-        "duracion": "15 horas"
-      },
-      "nivel": {
-        "clave": "intermedio",
-        "nombre": "Intermedio"
-      },
-      "fechas": {
-        "inicio": "2025-12-02",
-        "fin": "2025-12-16",
-        "dias": "Martes"
-      },
       "horario": {
-        "inicio": "18:00",
-        "fin": "20:30",
-        "zona": "Hrs"
-      },
-      "descripcion": "Estrategias para una práctica docente con enfoque de igualdad e inclusión.",
-      "ponentes": [
-        "Mtra. Laura Méndez"
-      ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-genero"
-      },
-      "contacto": {
-        "emails": [
-          "cursosdgapa@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
-      }
-    },
-    {
-      "id": "PASD-2006",
-      "tipo": "Curso",
-      "titulo": "Sostenibilidad y Responsabilidad Ambiental",
-      "estado": "en-curso",
-      "categoria": {
-        "clave": "desarrollo-sostenible",
-        "nombre": "Desarrollo sostenible"
-      },
-      "modalidad": {
-        "clave": "mixta",
-        "nombre": "Mixta",
-        "duracion": "30 horas"
-      },
-      "nivel": {
-        "clave": "avanzado",
-        "nombre": "Avanzado"
-      },
-      "fechas": {
-        "inicio": "2026-02-10",
-        "fin": "2026-03-05",
-        "dias": "Jueves"
-      },
-      "horario": {
-        "inicio": "17:00",
-        "fin": "20:00",
-        "zona": "Hrs"
-      },
-      "descripcion": "Conceptos y prácticas para integrar la sostenibilidad en la docencia.",
-      "ponentes": [
-        "Dr. Manuel Salgado"
-      ],
-      "enlaces": {
-        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-        "registro": "https://forms.gle/registro-sostenibilidad"
-      },
-      "contacto": {
-        "emails": [
-          "planeacionacademica@aragon.unam.mx"
-        ],
-        "whatsapp": "5575169840"
+        "dias": "Viernes",
+        "horario": "17:00 a 22:00"
       }
     }
   ]
