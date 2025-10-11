@@ -1,42 +1,309 @@
 {
   "programa": "PASD 2025",
   "organiza": {
-    "instituciones": ["DGAPA", "UNAM FES Aragón", "Unidad de Planeación"]
+    "instituciones": [
+      "DGAPA",
+      "UNAM FES Aragón",
+      "Unidad de Planeación"
+    ]
   },
-  "curso": {
-    "tipo": "Curso",
-    "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
-    "id": "15164",
-    "categoria": "Igualdad de Género"
-  },
-  "ponentes": ["Arq. Mónica García Juárez", "Mtra. Alejandra Villa Calderón"],
-  "modalidad": {
-    "tipo": "En línea",
-    "duracion": "20 horas"
-  },
-  "fechas": {
-    "inicio": "2025-08-09",
-    "fin": "2025-08-30",
-    "dias": "Sabatino"
-  },
-  "horario": {
-    "inicio": "09:00",
-    "fin": "14:00",
-    "zona": "Hrs"
-  },
-  "inscripciones": {
-    "url": "http://zafiro.dgapa.unam.mx/registro/inicio",
-    "qr": "incluido en cartel"
-  },
-  "oferta_general": {
-    "url": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
-    "qr": "incluido en cartel"
-  },
-  "contacto": {
-    "emails": [
-      "planeacionacademica@aragon.unam.mx",
-      "cursosdgapa@aragon.unam.mx"
-    ],
-    "whatsapp": "5575169840"
-  }
+  "cursos": [
+    {
+      "id": "15164",
+      "tipo": "Curso",
+      "titulo": "Lenguaje incluyente para una docencia con perspectiva de género",
+      "categoria": {
+        "clave": "genero",
+        "nombre": "Igualdad de Género"
+      },
+      "modalidad": {
+        "clave": "en-linea",
+        "nombre": "En línea",
+        "duracion": "20 horas"
+      },
+      "nivel": {
+        "clave": "intermedio",
+        "nombre": "Intermedio"
+      },
+      "fechas": {
+        "inicio": "2025-08-09",
+        "fin": "2025-08-30",
+        "dias": "Sabatino"
+      },
+      "horario": {
+        "inicio": "09:00",
+        "fin": "14:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Reflexiona sobre el uso del lenguaje incluyente para transformar la práctica docente con perspectiva de género.",
+      "ponentes": [
+        "Arq. Mónica García Juárez",
+        "Mtra. Alejandra Villa Calderón"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "http://zafiro.dgapa.unam.mx/registro/inicio"
+      },
+      "contacto": {
+        "emails": [
+          "planeacionacademica@aragon.unam.mx",
+          "cursosdgapa@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2001",
+      "tipo": "Curso",
+      "titulo": "Herramientas Digitales para Docencia",
+      "categoria": {
+        "clave": "tic",
+        "nombre": "Conocimiento y Uso de TIC"
+      },
+      "modalidad": {
+        "clave": "en-linea",
+        "nombre": "En línea",
+        "duracion": "16 horas"
+      },
+      "nivel": {
+        "clave": "basico",
+        "nombre": "Básico"
+      },
+      "fechas": {
+        "inicio": "2025-11-15",
+        "fin": "2025-12-06",
+        "dias": "Sabatino"
+      },
+      "horario": {
+        "inicio": "09:00",
+        "fin": "12:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Uso efectivo de plataformas y aplicaciones para planear clases, evaluar y dar seguimiento.",
+      "ponentes": [
+        "Lic. Fernanda López",
+        "Mtro. Jorge Martínez"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-tic"
+      },
+      "contacto": {
+        "emails": [
+          "planeacionacademica@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2002",
+      "tipo": "Curso",
+      "titulo": "Estrategias de Evaluación Auténtica",
+      "categoria": {
+        "clave": "didactico",
+        "nombre": "Apoyo didáctico-pedagógico"
+      },
+      "modalidad": {
+        "clave": "presencial",
+        "nombre": "Presencial",
+        "duracion": "20 horas"
+      },
+      "nivel": {
+        "clave": "intermedio",
+        "nombre": "Intermedio"
+      },
+      "fechas": {
+        "inicio": "2025-10-28",
+        "fin": "2025-11-01",
+        "dias": "Entre semana"
+      },
+      "horario": {
+        "inicio": "16:00",
+        "fin": "19:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Diseña instrumentos y rúbricas para valorar desempeños reales en el aula.",
+      "ponentes": [
+        "Dra. Lorena Pérez"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-evaluacion"
+      },
+      "contacto": {
+        "emails": [
+          "cursosdgapa@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2003",
+      "tipo": "Curso",
+      "titulo": "Metodología de la Investigación para Docentes",
+      "categoria": {
+        "clave": "investigacion",
+        "nombre": "Apoyo a la investigación"
+      },
+      "modalidad": {
+        "clave": "mixta",
+        "nombre": "Mixta",
+        "duracion": "24 horas"
+      },
+      "nivel": {
+        "clave": "basico",
+        "nombre": "Básico"
+      },
+      "fechas": {
+        "inicio": "2026-01-12",
+        "fin": "2026-02-02",
+        "dias": "Lunes y miércoles"
+      },
+      "horario": {
+        "inicio": "17:00",
+        "fin": "20:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Enfoques, métodos y ética para formular proyectos académicos rigurosos.",
+      "ponentes": [
+        "Dr. Ricardo Hernández"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-investigacion"
+      },
+      "contacto": {
+        "emails": [
+          "planeacionacademica@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2004",
+      "tipo": "Curso",
+      "titulo": "Didáctica para la Docencia Inicial",
+      "categoria": {
+        "clave": "docencia",
+        "nombre": "Docencia inicial"
+      },
+      "modalidad": {
+        "clave": "presencial",
+        "nombre": "Presencial",
+        "duracion": "18 horas"
+      },
+      "nivel": {
+        "clave": "basico",
+        "nombre": "Básico"
+      },
+      "fechas": {
+        "inicio": "2025-11-05",
+        "fin": "2025-11-19",
+        "dias": "Miércoles"
+      },
+      "horario": {
+        "inicio": "10:00",
+        "fin": "13:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Fundamentos prácticos para tus primeras experiencias frente a grupo.",
+      "ponentes": [
+        "Mtra. Adriana Torres"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-docencia"
+      },
+      "contacto": {
+        "emails": [
+          "planeacionacademica@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2005",
+      "tipo": "Curso",
+      "titulo": "Perspectiva de Género en el Aula",
+      "categoria": {
+        "clave": "genero",
+        "nombre": "Igualdad de Género"
+      },
+      "modalidad": {
+        "clave": "en-linea",
+        "nombre": "En línea",
+        "duracion": "15 horas"
+      },
+      "nivel": {
+        "clave": "intermedio",
+        "nombre": "Intermedio"
+      },
+      "fechas": {
+        "inicio": "2025-12-02",
+        "fin": "2025-12-16",
+        "dias": "Martes"
+      },
+      "horario": {
+        "inicio": "18:00",
+        "fin": "20:30",
+        "zona": "Hrs"
+      },
+      "descripcion": "Estrategias para una práctica docente con enfoque de igualdad e inclusión.",
+      "ponentes": [
+        "Mtra. Laura Méndez"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-genero"
+      },
+      "contacto": {
+        "emails": [
+          "cursosdgapa@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    },
+    {
+      "id": "PASD-2006",
+      "tipo": "Curso",
+      "titulo": "Sostenibilidad y Responsabilidad Ambiental",
+      "categoria": {
+        "clave": "desarrollo-sostenible",
+        "nombre": "Desarrollo sostenible"
+      },
+      "modalidad": {
+        "clave": "mixta",
+        "nombre": "Mixta",
+        "duracion": "30 horas"
+      },
+      "nivel": {
+        "clave": "avanzado",
+        "nombre": "Avanzado"
+      },
+      "fechas": {
+        "inicio": "2026-02-10",
+        "fin": "2026-03-05",
+        "dias": "Jueves"
+      },
+      "horario": {
+        "inicio": "17:00",
+        "fin": "20:00",
+        "zona": "Hrs"
+      },
+      "descripcion": "Conceptos y prácticas para integrar la sostenibilidad en la docencia.",
+      "ponentes": [
+        "Dr. Manuel Salgado"
+      ],
+      "enlaces": {
+        "detalles": "https://www.aragon.unam.mx/fes-aragon/#!/portal-docente",
+        "registro": "https://forms.gle/registro-sostenibilidad"
+      },
+      "contacto": {
+        "emails": [
+          "planeacionacademica@aragon.unam.mx"
+        ],
+        "whatsapp": "5575169840"
+      }
+    }
+  ]
 }
