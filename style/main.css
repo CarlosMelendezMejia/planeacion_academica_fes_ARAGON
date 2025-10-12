@@ -115,13 +115,13 @@ body {
         height: auto;
         min-height: 5rem;
     }
-    
+
     .navbar-collapse {
         background-color: var(--navbar-bg);
         margin: 0 -1rem;
         padding: 1rem;
     }
-    
+
     .navbar-collapse.show,
     .navbar-collapse.collapsing {
         background-color: var(--navbar-bg);
@@ -527,7 +527,8 @@ body {
 /* Limita el ancho de la animación en pantallas grandes para no invadir el logo */
 @media (min-width: 992px) {
     #flip {
-        max-width: 28ch; /* ajusta si deseas más/menos ancho visible */
+        max-width: 28ch;
+        /* ajusta si deseas más/menos ancho visible */
     }
 }
 
@@ -545,14 +546,20 @@ body {
     /* texto blanco sobre tu overlay oscuro */
     padding: 0;
     /* sin fondo ni padding para integrarse al hero */
-    height: 2.4em;          /* muestra hasta 2 líneas */
-    line-height: 1.2;       /* altura de línea coherente */
-    margin-bottom: 0;       /* sin gap adicional; cada item ocupa 2 líneas exactas */
+    height: 2.4em;
+    /* muestra hasta 2 líneas */
+    line-height: 1.2;
+    /* altura de línea coherente */
+    margin-bottom: 0;
+    /* sin gap adicional; cada item ocupa 2 líneas exactas */
     text-transform: none;
     /* respeta mayúsculas/minúsculas originales */
-    white-space: normal;    /* permite salto de línea */
-    overflow: hidden;       /* recorta si excede 2 líneas */
-    word-break: break-word; /* evita desbordes por palabras largas */
+    white-space: normal;
+    /* permite salto de línea */
+    overflow: hidden;
+    /* recorta si excede 2 líneas */
+    word-break: break-word;
+    /* evita desbordes por palabras largas */
     will-change: transform, opacity;
 }
 
@@ -562,13 +569,37 @@ body {
 }
 
 @keyframes flip-item-enter-2 {
+
     /* 0%→6%: el segundo ítem entra desde arriba y aparece */
-    0%   { opacity: 0; transform: translateY(-25%); }
-    5%   { opacity: 0.7; transform: translateY(-8%); }
-    6%   { opacity: 1; transform: translateY(0); }
-    49%  { opacity: 1; transform: translateY(0); }
-    50%  { opacity: 0; transform: translateY(-25%); }
-    100% { opacity: 0; transform: translateY(-25%); }
+    0% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    5% {
+        opacity: 0.7;
+        transform: translateY(-8%);
+    }
+
+    6% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    49% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
 }
 
 #flip .flip-item:nth-child(1) {
@@ -576,25 +607,78 @@ body {
 }
 
 @keyframes flip-item-enter-1 {
+
     /* 50%→56%: el primer ítem entra desde arriba y aparece */
-    0%   { opacity: 0; transform: translateY(-25%); }
-    49%  { opacity: 0; transform: translateY(-25%); }
-    50%  { opacity: 0.7; transform: translateY(-8%); }
-    56%  { opacity: 1; transform: translateY(0); }
-    99%  { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-25%); }
+    0% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    49% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: translateY(-8%);
+    }
+
+    56% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
 }
 
 /* Versión para dos elementos (paso = 1.2em + 1.2em = 2.4em) */
 @keyframes show-two {
+
     /* Ventanas de visibilidad y transiciones sincronizadas */
-    0%   { margin-top: -2.4em; }   /* 2º visible */
-    6%   { margin-top: -2.4em; }   /* mantener 2º visible tras entrada */
-    49%  { margin-top: -2.4em; }   /* seguir mostrando 2º */
-    50%  { margin-top: 0; }        /* mostrar 1º */
-    56%  { margin-top: 0; }        /* mantener 1º tras entrada */
-    99%  { margin-top: 0; }        /* mantener 1º visible */
-    100% { margin-top: -2.4em; }   /* reset al 2º */
+    0% {
+        margin-top: -2.4em;
+    }
+
+    /* 2º visible */
+    6% {
+        margin-top: -2.4em;
+    }
+
+    /* mantener 2º visible tras entrada */
+    49% {
+        margin-top: -2.4em;
+    }
+
+    /* seguir mostrando 2º */
+    50% {
+        margin-top: 0;
+    }
+
+    /* mostrar 1º */
+    56% {
+        margin-top: 0;
+    }
+
+    /* mantener 1º tras entrada */
+    99% {
+        margin-top: 0;
+    }
+
+    /* mantener 1º visible */
+    100% {
+        margin-top: -2.4em;
+    }
+
+    /* reset al 2º */
 }
 
 /* Accesibilidad: ocultamos la etiqueta semántica sin afectar layout */
@@ -622,19 +706,24 @@ body {
 /* Prefijo: collage (todas las reglas están bajo .collage para evitar conflictos) */
 .collage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 6px; /* gap mínimo para ganar espacio */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas iguales */
+    gap: 6px;
+    /* gap mínimo para ganar espacio */
     align-items: stretch;
 }
 
 /* Neutraliza paddings heredados de Bootstrap en .col dentro del collage */
-.collage .col { padding: 0 !important; }
+.collage .col {
+    padding: 0 !important;
+}
 
 .collage .left,
 .collage .center,
 .collage .right {
     display: grid;
-    gap: 6px; /* mismo gap mínimo */
+    gap: 6px;
+    /* mismo gap mínimo */
 }
 
 /* La columna derecha contiene 4 imágenes más chicas en una grilla 2x2 */
@@ -649,7 +738,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     background: #111;
-    isolation: isolate; /* asegura capas correctas del overlay */
+    isolation: isolate;
+    /* asegura capas correctas del overlay */
 }
 
 .collage .img-box img {
@@ -663,7 +753,8 @@ body {
 /* Overlay informativo */
 .collage .overlay {
     position: absolute;
-    inset: auto 0 0 0; /* pegado abajo */
+    inset: auto 0 0 0;
+    /* pegado abajo */
     padding: 1rem 1rem 1.1rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0));
     color: #fff;
@@ -678,14 +769,14 @@ body {
 .collage .overlay h3 {
     font-size: clamp(1rem, 2.6vw, 1.1rem);
     margin: 0 0 0.25rem 0;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .collage .overlay p {
     font-size: clamp(0.85rem, 2.2vw, 0.95rem);
     opacity: 0.9;
     margin: 0;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .collage .img-box:hover img {
@@ -714,34 +805,64 @@ body {
 }
 
 /* Proporciones: 1 y 2 grandes (mismo tamaño, cuadradas), 3-6 chicas (cuadradas e iguales) */
-.collage .left .img-box { aspect-ratio: 1 / 1; }
-.collage .center .img-box { aspect-ratio: 1 / 1; }
-.collage .right .img-box { aspect-ratio: 1 / 1; }
+.collage .left .img-box {
+    aspect-ratio: 1 / 1;
+}
+
+.collage .center .img-box {
+    aspect-ratio: 1 / 1;
+}
+
+.collage .right .img-box {
+    aspect-ratio: 1 / 1;
+}
 
 /* Responsivo: tablets */
 @media (max-width: 991.98px) {
     .collage {
         grid-template-columns: 1fr;
     }
+
     .collage .left,
     .collage .center,
     .collage .right {
         grid-template-columns: 1fr;
     }
+
     /* En pantallas medianas mantenemos cuadrados para consistencia y simplicidad */
-    .collage .left .img-box { aspect-ratio: 1 / 1; }
-    .collage .center .img-box { aspect-ratio: 1 / 1; }
-    .collage .right { grid-template-columns: 1fr 1fr; }
+    .collage .left .img-box {
+        aspect-ratio: 1 / 1;
+    }
+
+    .collage .center .img-box {
+        aspect-ratio: 1 / 1;
+    }
+
+    .collage .right {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Responsivo: móviles */
 @media (max-width: 575.98px) {
     .collage {
-        gap: 6px; /* mantener gap mínimo también en móvil */
+        gap: 6px;
+        /* mantener gap mínimo también en móvil */
     }
-    .collage .img-box { border-radius: 10px; }
-    .collage .overlay { padding: 0.85rem 0.9rem 1rem; }
-    .collage .right { grid-template-columns: 1fr; } /* apila 4 chicas en móvil */
+
+    .collage .img-box {
+        border-radius: 10px;
+    }
+
+    .collage .overlay {
+        padding: 0.85rem 0.9rem 1rem;
+    }
+
+    .collage .right {
+        grid-template-columns: 1fr;
+    }
+
+    /* apila 4 chicas en móvil */
 }
 
 /* Flip Card */
@@ -759,14 +880,15 @@ body {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -840,17 +962,29 @@ body {
     box-shadow: 0 0 15px 4px rgba(29, 112, 255, 0.8);
 }
 
-.facebook-float:active { transform: scale(1.06); }
+.facebook-float:active {
+    transform: scale(1.06);
+}
 
 @media (max-width: 575.98px) {
-    .facebook-float { right: 14px; bottom: 14px; width: 52px; height: 52px; }
-    .facebook-float img { width: 28px; height: 28px; }
+    .facebook-float {
+        right: 14px;
+        bottom: 14px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .facebook-float img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 /* Floating WhatsApp button */
 .whatsapp-float {
     position: fixed;
-    bottom: 90px; /* por encima del botón de Facebook */
+    bottom: 90px;
+    /* por encima del botón de Facebook */
     right: 80px;
     z-index: 1040;
     cursor: pointer;
@@ -879,7 +1013,9 @@ body {
     box-shadow: 0 0 15px 4px rgba(16, 185, 129, 0.8);
 }
 
-.whatsapp-float:hover img { transform: scale(1.06); }
+.whatsapp-float:hover img {
+    transform: scale(1.06);
+}
 
 .whatsapp-float:focus-visible {
     outline: none;
@@ -889,7 +1025,8 @@ body {
 /* Floating YT button */
 .yt-float {
     position: fixed;
-    bottom: 160px; /* por encima del WhatsApp */
+    bottom: 160px;
+    /* por encima del WhatsApp */
     right: 80px;
     z-index: 1040;
     cursor: pointer;
@@ -916,19 +1053,41 @@ body {
     box-shadow: 0 0 15px 4px rgba(239, 68, 68, 0.8);
 }
 
-.yt-float:active { transform: scale(1.06); }
+.yt-float:active {
+    transform: scale(1.06);
+}
 
 @media (max-width: 575.98px) {
-    .yt-float { right: 14px; bottom: 138px; width: 52px; height: 52px; }
-    .yt-float img { width: 28px; height: 28px; }
+    .yt-float {
+        right: 14px;
+        bottom: 138px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .yt-float img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 
-.whatsapp-float:active { transform: scale(1.06); }
+.whatsapp-float:active {
+    transform: scale(1.06);
+}
 
 @media (max-width: 575.98px) {
-    .whatsapp-float { right: 14px; bottom: 76px; width: 52px; height: 52px; }
-    .whatsapp-float img { width: 28px; height: 28px; }
+    .whatsapp-float {
+        right: 14px;
+        bottom: 76px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 /* Estado badges para cursos */
@@ -972,6 +1131,7 @@ body {
     height: 150px;
     object-fit: cover;
 }
+
 /* ========================================
    Carrusel de Carteles y Avisos
    ======================================== */
@@ -1159,7 +1319,7 @@ body {
 }
 
 /* ========================================
-   Badge de Programa (DGAPA / FES ARAG�N)
+   Badge de Programa (DGAPA / FES ARAGÓN)
    ======================================== */
 
 .programa-badge {
@@ -1169,11 +1329,16 @@ body {
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 48%;
 }
 
 /* Estilos mejorados para cards de cursos */
 .course-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
 }
 
 .course-card:hover {
@@ -1210,6 +1375,37 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
+}
+
+.category-badge {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 48%;
+}
+
+/* Media queries para responsive en cards */
+@media (max-width: 576px) {
+
+    .programa-badge,
+    .category-badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+        max-width: 45%;
+    }
+
+    .course-card .card-body {
+        padding: 0.75rem;
+    }
+
+    .course-title {
+        font-size: 1rem !important;
+    }
+
+    .estado-badge {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
 }
 
 .bg-success {
