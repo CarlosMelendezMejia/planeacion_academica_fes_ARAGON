@@ -116,7 +116,7 @@
                                 <option value="IGUALDAD DE GÉNERO">Igualdad de género</option>
                                 <option value="BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE">Bienestar de la comunidad</option>
                                 <option value="CONOCIMIENTO Y USO DE TIC">Conocimiento y Uso de TIC</option>
-                                <option value="DESARROLLO SOSTENIBLE">Desarrollo sostenible</option>
+                                <option value="RESPONSABILIDAD GLOBAL Y DESARROLLO SOSTENIBLE">Responsabilidad Global y Desarrollo Sostenible</option>
                                 <option value="NEURODIVERGENCIA E INCLUSIÓN">Neurodivergencia e inclusión</option>
                             </select>
                         </div>
@@ -185,8 +185,8 @@
                             TIC
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--desarrollo-sostenible)"
-                            data-cat="DESARROLLO SOSTENIBLE">
-                            Desarrollo sostenible
+                            data-cat="RESPONSABILIDAD GLOBAL Y DESARROLLO SOSTENIBLE">
+                            Responsabilidad Global
                         </button>
                         <button class="btn btn-sm text-white" style="background: var(--neurodivergencia)"
                             data-cat="NEURODIVERGENCIA E INCLUSIÓN">
@@ -215,6 +215,10 @@
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <span class="badge programa-badge"></span>
                                 <span class="badge text-white category-badge"></span>
+                            </div>
+                            <!-- ID del curso -->
+                            <div class="mb-1">
+                                <small class="text-muted course-id">ID: </small>
                             </div>
                             <!-- Título y Estado -->
                             <div class="d-flex align-items-center gap-2 mb-2">
@@ -427,7 +431,7 @@
             "IGUALDAD DE GÉNERO": "genero",
             "BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE": "bienestar",
             "CONOCIMIENTO Y USO DE TIC": "tic",
-            "DESARROLLO SOSTENIBLE": "desarrollo-sostenible",
+            "RESPONSABILIDAD GLOBAL Y DESARROLLO SOSTENIBLE": "desarrollo-sostenible",
             "NEURODIVERGENCIA E INCLUSIÓN": "neurodivergencia"
         };
 
@@ -505,10 +509,17 @@
                 categoryBadge.style.background = `var(--${categoriaClave})`;
             }
 
-            // Título
+            // ID del curso
+            const idEl = clone.querySelector(".course-id");
+            if (idEl && curso.id) {
+                idEl.textContent = `ID: ${curso.id}`;
+            }
+
+            // Título con color de categoría
             const titleEl = clone.querySelector(".course-title");
             if (titleEl) {
                 titleEl.textContent = nombre;
+                titleEl.style.color = `var(--${categoriaClave})`;
             }
 
             // Badge de estado

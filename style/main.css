@@ -1217,3 +1217,11 @@ body {
 .course-card[data-estado="CANCELADO"] {
     opacity: 0.75;
 }
+
+/* ID del curso */
+.course-id {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6c757d;
+    letter-spacing: 0.3px;
+}

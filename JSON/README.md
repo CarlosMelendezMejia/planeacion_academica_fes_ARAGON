@@ -101,7 +101,7 @@ Cada objeto dentro del array `cursos` representa un curso individual con la sigu
 | `"IGUALDAD DE GÉNERO"` | Igualdad de Género | `#7b2cbf` |
 | `"BIENESTAR DE LA COMUNIDAD DESDE LA PRÁCTICA DOCENTE"` | Bienestar de la comunidad | `#ff5400` |
 | `"CONOCIMIENTO Y USO DE TIC"` | Conocimiento y Uso de TIC | `#ef476f` |
-| `"DESARROLLO SOSTENIBLE"` | Desarrollo sostenible | `#cca43b` |
+| `"RESPONSABILIDAD GLOBAL Y DESARROLLO SOSTENIBLE"` | Responsabilidad Global y Desarrollo Sostenible | `#cca43b` |
 | `"NEURODIVERGENCIA E INCLUSIÓN"` | Neurodivergencia e inclusión | `#820263` |
 
 #### 5. **Nivel**
