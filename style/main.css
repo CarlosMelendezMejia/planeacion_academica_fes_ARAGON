@@ -109,6 +109,25 @@ body {
     color: var(--accent);
 }
 
+/* Mobile navbar collapse background fix */
+@media (max-width: 991.98px) {
+    .navbar {
+        height: auto;
+        min-height: 5rem;
+    }
+    
+    .navbar-collapse {
+        background-color: var(--navbar-bg);
+        margin: 0 -1rem;
+        padding: 1rem;
+    }
+    
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+        background-color: var(--navbar-bg);
+    }
+}
+
 /* Hero Section */
 .hero {
     background-size: cover;
@@ -1140,7 +1159,7 @@ body {
 }
 
 /* ========================================
-   Badge de Programa (DGAPA / FES ARAGÓN)
+   Badge de Programa (DGAPA / FES ARAGï¿½N)
    ======================================== */
 
 .programa-badge {
